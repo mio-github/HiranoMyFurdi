@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-ios-gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  /* iOS-like scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@layer components {
+  /* iOS Card Style */
+  .ios-card {
+    @apply bg-white rounded-ios shadow-ios-card;
+  }
+
+  /* iOS Button */
+  .ios-button {
+    @apply rounded-full px-6 py-3 font-semibold transition-transform active:scale-95;
+  }
+
+  /* iOS Tab Bar */
+  .ios-tab-bar {
+    @apply absolute bottom-0 left-0 right-0 bg-white border-t border-ios-separator;
+    height: 60px;
+    z-index: 40;
+  }
+
+  /* iOS Safe Area */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Progress Bar */
+  .progress-bar {
+    @apply h-2 rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full rounded-full transition-all duration-300;
+  }
+}

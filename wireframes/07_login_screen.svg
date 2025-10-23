@@ -1,0 +1,76 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#FFFFFF"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+
+  <!-- Logo Section -->
+  <g transform="translate(146, 100)">
+    <circle cx="50" cy="50" r="50" fill="url(#gradientLogo)"/>
+    <defs>
+      <linearGradient id="gradientLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <text x="30" y="65" font-family="Arial" font-size="36" font-weight="bold" fill="#FFFFFF">F</text>
+  </g>
+
+  <!-- App Name -->
+  <text x="150" y="230" font-family="Arial" font-size="24" font-weight="bold" fill="#1C1C1E">MyFURDI</text>
+  <text x="120" y="260" font-family="Arial" font-size="13" fill="#3A3A3C">あなたのフィットネスパートナー</text>
+
+  <!-- Login Buttons -->
+  <g transform="translate(46, 310)">
+    <!-- Primary Login: New Pix -->
+    <rect x="0" y="0" width="300" height="50" rx="25" fill="#FF69B4"/>
+    <circle cx="25" cy="25" r="15" fill="#FFFFFF"/>
+    <text x="19" y="31" font-size="18" fill="#FF69B4">🔗</text>
+    <text x="110" y="32" font-family="Arial" font-size="15" font-weight="bold" fill="#FFFFFF">新Pixでログイン</text>
+
+    <!-- Email + Password Login -->
+    <rect x="0" y="70" width="300" height="50" rx="25" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="2"/>
+    <circle cx="25" cy="95" r="15" fill="#F5F5F5"/>
+    <text x="19" y="101" font-size="18" fill="#3A3A3C">✉️</text>
+    <text x="90" y="102" font-family="Arial" font-size="15" fill="#1C1C1E">メール/パスワードでログイン</text>
+  </g>
+
+  <!-- Email/Password Form (hidden by default) -->
+  <g transform="translate(46, 590)" opacity="0">
+    <rect x="0" y="0" width="300" height="50" rx="8" fill="#F5F5F5" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="15" y="30" font-family="Arial" font-size="13" fill="#3A3A3C">メールアドレス</text>
+
+    <rect x="0" y="60" width="300" height="50" rx="8" fill="#F5F5F5" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="15" y="90" font-family="Arial" font-size="13" fill="#3A3A3C">パスワード</text>
+
+    <text x="200" y="130" font-family="Arial" font-size="12" fill="#FF69B4">パスワードを忘れた方</text>
+
+    <rect x="0" y="145" width="300" height="45" rx="22" fill="#FF69B4"/>
+    <text x="125" y="173" font-family="Arial" font-size="15" font-weight="bold" fill="#FFFFFF">ログイン</text>
+  </g>
+
+  <!-- Terms and Privacy -->
+  <g transform="translate(60, 700)">
+    <text x="0" y="0" font-family="Arial" font-size="10" fill="#3A3A3C">ログインすることで</text>
+    <text x="35" y="18" font-family="Arial" font-size="10" fill="#FF69B4">利用規約</text>
+    <text x="95" y="18" font-family="Arial" font-size="10" fill="#3A3A3C">および</text>
+    <text x="140" y="18" font-family="Arial" font-size="10" fill="#FF69B4">プライバシーポリシー</text>
+    <text x="55" y="36" font-family="Arial" font-size="10" fill="#3A3A3C">に同意したものとみなされます</text>
+  </g>
+
+  <!-- Alternative Login Link -->
+  <g transform="translate(110, 770)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#3A3A3C">アカウントをお持ちでない方</text>
+    <text x="40" y="20" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">新規登録はこちら</text>
+  </g>
+
+  <!-- Support -->
+  <g transform="translate(140, 820)">
+    <text x="0" y="0" font-family="Arial" font-size="11" fill="#3A3A3C">ログインでお困りの方</text>
+  </g>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: ログイン画面 | 主要機能: 新Pix連携、メール/パスワードログイン</text>
+</svg>

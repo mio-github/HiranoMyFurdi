@@ -1,0 +1,98 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#F5F5F5"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+
+  <!-- Header -->
+  <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+  <text x="165" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">リワード</text>
+
+  <!-- Tabs -->
+  <rect y="104" width="393" height="50" fill="#FFFFFF"/>
+  <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="135" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">今日</text>
+  <line x1="30" y1="152" x2="60" y2="152" stroke="#FF69B4" stroke-width="2"/>
+  <text x="120" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">週間</text>
+  <text x="205" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">バッジ</text>
+  <text x="295" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">実績</text>
+
+  <!-- Today's Challenge Card -->
+  <rect x="16" y="170" width="361" height="380" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 190)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">🎯 今日のチャレンジ</text>
+    <rect x="230" y="-15" width="60" height="20" rx="10" fill="#F5F5F5"/>
+    <rect x="230" y="-15" width="36" height="20" rx="10" fill="#FF69B4"/>
+    <text x="295" y="-2" font-family="Arial" font-size="10" fill="#3A3A3C">3/5</text>
+
+    <!-- Completed Tasks -->
+    <rect x="0" y="20" width="333" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+    <circle cx="20" cy="45" r="8" fill="#4CAF50"/>
+    <text x="16" y="49" font-family="Arial" font-size="10" fill="#FFFFFF">✓</text>
+    <text x="40" y="40" font-family="Arial" font-size="12" fill="#1C1C1E">アプリを開く</text>
+    <text x="40" y="56" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: デイリースタンプ 🎫</text>
+
+    <rect x="0" y="80" width="333" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+    <circle cx="20" cy="105" r="8" fill="#4CAF50"/>
+    <text x="16" y="109" font-family="Arial" font-size="10" fill="#FFFFFF">✓</text>
+    <text x="40" y="100" font-family="Arial" font-size="12" fill="#1C1C1E">体重を記録する</text>
+    <text x="40" y="116" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: ヘルスバッジ 🏅</text>
+
+    <rect x="0" y="140" width="333" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+    <circle cx="20" cy="165" r="8" fill="#4CAF50"/>
+    <text x="16" y="169" font-family="Arial" font-size="10" fill="#FFFFFF">✓</text>
+    <text x="40" y="160" font-family="Arial" font-size="12" fill="#1C1C1E">混雑状況を確認する</text>
+    <text x="40" y="176" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: スマートバッジ 🔍</text>
+
+    <!-- Pending Tasks -->
+    <rect x="0" y="200" width="333" height="50" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <circle cx="20" cy="225" r="8" fill="none" stroke="#3A3A3C" stroke-width="1.5"/>
+    <text x="40" y="220" font-family="Arial" font-size="12" fill="#1C1C1E">動画を1本視聴する</text>
+    <text x="40" y="236" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: トレーナーバッジ 🎬</text>
+    <rect x="250" y="212" width="70" height="26" rx="13" fill="#FF69B4"/>
+    <text x="270" y="230" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">視聴</text>
+
+    <rect x="0" y="260" width="333" height="50" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <circle cx="20" cy="285" r="8" fill="none" stroke="#3A3A3C" stroke-width="1.5"/>
+    <text x="40" y="280" font-family="Arial" font-size="12" fill="#1C1C1E">来店する</text>
+    <text x="40" y="296" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: フィットネスバッジ 💪</text>
+  </g>
+
+  <!-- Bonus Card -->
+  <rect x="16" y="565" width="361" height="60" rx="8" fill="url(#gradient1)"/>
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="30" y="590" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">🎁 全達成ボーナス</text>
+  <text x="30" y="610" font-family="Arial" font-size="11" fill="#FFFFFF" opacity="0.9">5つすべて達成で特別バッジ獲得！</text>
+
+  <!-- Progress Info -->
+  <rect x="16" y="640" width="361" height="100" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="665" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">💪 継続は力なり</text>
+  <text x="30" y="690" font-family="Arial" font-size="12" fill="#3A3A3C">今週のチャレンジ達成率: 85%</text>
+  <rect x="30" y="700" width="333" height="8" rx="4" fill="#F5F5F5"/>
+  <rect x="30" y="700" width="283" height="8" rx="4" fill="#FF69B4"/>
+  <text x="30" y="725" font-family="Arial" font-size="11" fill="#FF69B4">あと少しで週間目標達成！</text>
+
+  <!-- Tab Bar -->
+  <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+  <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+  <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+  <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+  <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+  <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+  <text x="262" y="820" font-family="Arial" font-size="10" fill="#FF69B4">🏆</text>
+  <text x="250" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">リワード</text>
+  <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+  <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: リワード画面 | 主要機能: 日次チャレンジ、週間・月間チャレンジ、バッジ、実績</text>
+</svg>

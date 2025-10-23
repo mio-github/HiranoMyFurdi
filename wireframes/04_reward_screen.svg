@@ -1,0 +1,113 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#F5F5F5"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+
+  <!-- Header -->
+  <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+  <text x="165" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">リワード</text>
+
+  <!-- Tabs -->
+  <rect y="104" width="393" height="50" fill="#FFFFFF"/>
+  <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">今日</text>
+  <text x="120" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">週間</text>
+  <text x="205" y="135" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">バッジ</text>
+  <line x1="195" y1="152" x2="245" y2="152" stroke="#FF69B4" stroke-width="2"/>
+  <text x="295" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">実績</text>
+
+  <!-- Badge Category Tabs (NEW) -->
+  <rect y="154" width="393" height="45" fill="#F5F5F5"/>
+  <g transform="translate(20, 172)">
+    <rect x="0" y="0" width="80" height="26" rx="13" fill="#FF69B4"/>
+    <text x="18" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">すべて</text>
+    <rect x="90" y="0" width="60" height="26" rx="13" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="107" y="18" font-family="Arial" font-size="11" fill="#1C1C1E">来館</text>
+    <rect x="160" y="0" width="60" height="26" rx="13" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="177" y="18" font-family="Arial" font-size="11" fill="#1C1C1E">運動</text>
+    <rect x="230" y="0" width="75" height="26" rx="13" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="240" y="18" font-family="Arial" font-size="11" fill="#1C1C1E">体組成</text>
+    <rect x="315" y="0" width="60" height="26" rx="13" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="330" y="18" font-family="Arial" font-size="11" fill="#1C1C1E">特別</text>
+  </g>
+
+  <!-- Badge Grid (NEW) -->
+  <rect x="16" y="210" width="361" height="520" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 230)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">バッジコレクション</text>
+    <text x="250" y="0" font-family="Arial" font-size="11" fill="#3A3A3C">獲得: 15/32</text>
+
+    <!-- Badge Grid (3 columns) -->
+    <!-- Row 1 -->
+    <circle cx="50" cy="50" r="30" fill="#FFD700" opacity="1"/>
+    <text x="45" y="58" font-size="24">🏅</text>
+    <text x="25" y="90" font-family="Arial" font-size="9" fill="#1C1C1E" text-anchor="middle">10回来館</text>
+
+    <circle cx="160" cy="50" r="30" fill="#4CAF50" opacity="1"/>
+    <text x="155" y="58" font-size="24">💪</text>
+    <text x="135" y="90" font-family="Arial" font-size="9" fill="#1C1C1E" text-anchor="middle">初トレーニング</text>
+
+    <circle cx="270" cy="50" r="30" fill="#2196F3" opacity="1"/>
+    <text x="265" y="58" font-size="24">📊</text>
+    <text x="245" y="90" font-family="Arial" font-size="9" fill="#1C1C1E" text-anchor="middle">体重記録10回</text>
+
+    <!-- Row 2 -->
+    <circle cx="50" cy="150" r="30" fill="#CCCCCC" opacity="0.3"/>
+    <text x="45" y="158" font-size="20" opacity="0.3">🔒</text>
+    <text x="25" y="190" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">50回来館</text>
+
+    <circle cx="160" cy="150" r="30" fill="#CCCCCC" opacity="0.3"/>
+    <text x="155" y="158" font-size="20" opacity="0.3">🔒</text>
+    <text x="135" y="190" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">連続7日</text>
+
+    <circle cx="270" cy="150" r="30" fill="#FF69B4" opacity="1"/>
+    <text x="265" y="158" font-size="24">🎬</text>
+    <text x="245" y="190" font-family="Arial" font-size="9" fill="#1C1C1E" text-anchor="middle">動画視聴5回</text>
+
+    <!-- Row 3 -->
+    <circle cx="50" cy="250" r="30" fill="#9C27B0" opacity="1"/>
+    <text x="45" y="258" font-size="24">🧬</text>
+    <text x="25" y="290" font-family="Arial" font-size="9" fill="#1C1C1E" text-anchor="middle">DNA検査実施</text>
+
+    <circle cx="160" cy="250" r="30" fill="#CCCCCC" opacity="0.3"/>
+    <text x="155" y="258" font-size="20" opacity="0.3">🔒</text>
+    <text x="135" y="290" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">月間30回</text>
+
+    <circle cx="270" cy="250" r="30" fill="#CCCCCC" opacity="0.3"/>
+    <text x="265" y="258" font-size="20" opacity="0.3">🔒</text>
+    <text x="245" y="290" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">目標体重達成</text>
+
+    <!-- Row 4 -->
+    <circle cx="50" cy="350" r="30" fill="#FF9800" opacity="1"/>
+    <text x="45" y="358" font-size="24">⭐</text>
+    <text x="25" y="390" font-family="Arial" font-size="9" fill="#1C1C1E" text-anchor="middle">早朝来館</text>
+
+    <circle cx="160" cy="350" r="30" fill="#CCCCCC" opacity="0.3"/>
+    <text x="155" y="358" font-size="20" opacity="0.3">🔒</text>
+    <text x="135" y="390" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">全マシン制覇</text>
+
+    <circle cx="270" cy="350" r="30" fill="#CCCCCC" opacity="0.3"/>
+    <text x="265" y="358" font-size="20" opacity="0.3">🔒</text>
+    <text x="245" y="390" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">友達招待</text>
+  </g>
+
+  <!-- Tab Bar -->
+  <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+  <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+  <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+  <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+  <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+  <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+  <text x="262" y="820" font-family="Arial" font-size="10" fill="#FF69B4">🏆</text>
+  <text x="250" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">リワード</text>
+  <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+  <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: リワード画面 | 主要機能: 日次チャレンジ、週間・月間チャレンジ、バッジ、実績</text>
+</svg>

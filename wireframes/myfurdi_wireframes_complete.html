@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFURDI Wireframes - Complete Set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        .screens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .screen-card {
+            background: white;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .screen-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+
+        .screen-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1C1C1E;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .screen-number {
+            background: linear-gradient(135deg, #FF69B4, #FF1493);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .screen-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .screen-svg {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: #F5F5F5;
+        }
+
+        .screen-svg svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .info-section {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .info-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1C1C1E;
+            margin-bottom: 20px;
+        }
+
+        .info-content {
+            color: #666;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF69B4, #FF1493);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏋️‍♀️ MyFURDI Wireframes</h1>
+        <p class="subtitle">女性専用フィットネスアプリ - 全画面ワイヤーフレーム (iPhone 14 Pro - 393×852px)</p>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <div class="info-title">📱 アプリ概要</div>
+            <div class="info-content">
+                <p style="margin-bottom: 15px;">
+                    MyFURDIは、女性専用AIフィットネスジム「FURDI」の公式アプリです。
+                    来店管理、トレーニング記録、体組成データ管理、DNA検査結果表示など、
+                    会員の健康とフィットネスをサポートする機能を提供します。
+                </p>
+                <div>
+                    <span class="badge">ホーム</span>
+                    <span class="badge">レポート</span>
+                    <span class="badge">入館証</span>
+                    <span class="badge">リワード</span>
+                    <span class="badge">メニュー</span>
+                    <span class="badge">DNA検査</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screens Grid -->
+        <div class="screens-grid">
+            <!-- Screen 1: Home -->
+            <div class="screen-card">
+                <div class="screen-title">
+                    <div class="screen-number">1</div>
+                    <span>ホーム画面</span>
+                </div>
+                <div class="screen-description">
+                    ダッシュボード、今日のチャレンジ、来店サマリー、混雑確認、健康データ表示
+                </div>
+                <div class="screen-svg">
+                    <svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="393" height="852" fill="#F5F5F5"/>
+                        <rect width="393" height="44" fill="#FFFFFF"/>
+                        <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+                        <text x="350" y="30" font-family="Arial" font-size="12" fill="#000">📶 🔋</text>
+                        <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+                        <text x="20" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">おはようございます、さくらさん！</text>
+                        <circle cx="360" cy="74" r="12" fill="none" stroke="#FF69B4" stroke-width="2"/>
+                        <text x="356" y="78" font-size="10">🔔</text>
+                        <rect x="16" y="120" width="361" height="140" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="145" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">🎯 今日のチャレンジ</text>
+                        <rect x="30" y="155" width="333" height="60" rx="8" fill="#FFE4E1"/>
+                        <text x="40" y="180" font-family="Arial" font-size="13" fill="#1C1C1E">体重を記録する</text>
+                        <text x="40" y="200" font-family="Arial" font-size="11" fill="#FF69B4">報酬: デイリーバッジ 🏅</text>
+                        <rect x="30" y="225" width="333" height="32" rx="16" fill="#FF69B4"/>
+                        <text x="140" y="245" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">1タップで記録する</text>
+                        <rect x="16" y="275" width="361" height="140" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#1C1C1E">🔥 5日連続来店中！</text>
+                        <text x="30" y="325" font-family="Arial" font-size="12" fill="#3A3A3C">今週の来店</text>
+                        <text x="340" y="325" font-family="Arial" font-size="12" font-weight="bold" fill="#1C1C1E">3/4回</text>
+                        <rect x="30" y="330" width="333" height="8" rx="4" fill="#F5F5F5"/>
+                        <rect x="30" y="330" width="250" height="8" rx="4" fill="#FF69B4"/>
+                        <text x="30" y="355" font-family="Arial" font-size="11" fill="#FF69B4">あと1回で目標達成です！</text>
+                        <line x1="30" y1="365" x2="363" y2="365" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="385" font-family="Arial" font-size="10" fill="#3A3A3C">前回来店</text>
+                        <text x="30" y="400" font-family="Arial" font-size="12" fill="#1C1C1E">昨日 18:30</text>
+                        <rect x="16" y="430" width="361" height="120" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="455" font-family="Arial" font-size="12" fill="#3A3A3C">📍 渋谷店（お気に入り）</text>
+                        <circle cx="40" cy="475" r="6" fill="#4CAF50"/>
+                        <text x="55" y="480" font-family="Arial" font-size="16" font-weight="bold" fill="#1C1C1E">かなり空いています</text>
+                        <text x="30" y="500" font-family="Arial" font-size="11" fill="#3A3A3C">現在の利用率: 25%</text>
+                        <rect x="30" y="510" width="160" height="28" rx="14" fill="#FF69B4"/>
+                        <text x="70" y="528" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">詳しく見る</text>
+                        <rect x="200" y="510" width="160" height="28" rx="14" fill="none" stroke="#FF69B4" stroke-width="2"/>
+                        <text x="235" y="528" font-family="Arial" font-size="12" font-weight="bold" fill="#FF69B4">今から行く</text>
+                        <rect x="16" y="565" width="361" height="180" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <rect x="16" y="565" width="120" height="40" fill="#FFFFFF"/>
+                        <text x="60" y="590" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">体重</text>
+                        <line x1="60" y1="595" x2="120" y2="595" stroke="#FF69B4" stroke-width="2"/>
+                        <text x="150" y="590" font-family="Arial" font-size="13" fill="#3A3A3C">体脂肪</text>
+                        <text x="235" y="590" font-family="Arial" font-size="13" fill="#3A3A3C">歩数</text>
+                        <text x="30" y="640" font-family="Arial" font-size="28" font-weight="bold" fill="#1C1C1E">54.2 <tspan font-size="16" fill="#3A3A3C">kg</tspan></text>
+                        <text x="30" y="665" font-family="Arial" font-size="13" fill="#4CAF50">↓ -0.3kg (前回比)</text>
+                        <text x="30" y="695" font-family="Arial" font-size="13" fill="#4CAF50">順調に減っています✨</text>
+                        <rect x="30" y="705" width="333" height="32" rx="16" fill="#FF69B4"/>
+                        <text x="165" y="725" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">記録する</text>
+                        <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="820" font-family="Arial" font-size="10" fill="#FF69B4">🏠</text>
+                        <text x="28" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">ホーム</text>
+                        <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+                        <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+                        <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+                        <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+                        <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+                        <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+                        <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+                        <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Screen 2: Report -->
+            <div class="screen-card">
+                <div class="screen-title">
+                    <div class="screen-number">2</div>
+                    <span>レポート画面</span>
+                </div>
+                <div class="screen-description">
+                    運動記録グラフ、体組成データ、来館履歴、週間サマリー表示
+                </div>
+                <div class="screen-svg">
+                    <svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="393" height="852" fill="#F5F5F5"/>
+                        <rect width="393" height="44" fill="#FFFFFF"/>
+                        <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+                        <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+                        <text x="170" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">レポート</text>
+                        <rect y="104" width="393" height="50" fill="#FFFFFF"/>
+                        <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="50" y="135" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">運動記録</text>
+                        <line x1="40" y1="152" x2="110" y2="152" stroke="#FF69B4" stroke-width="2"/>
+                        <text x="170" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">体組成</text>
+                        <text x="270" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">来館履歴</text>
+                        <g transform="translate(16, 170)">
+                            <rect width="40" height="28" rx="14" fill="#FF69B4"/>
+                            <text x="15" y="19" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">週</text>
+                            <rect x="50" width="40" height="28" rx="14" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                            <text x="65" y="19" font-family="Arial" font-size="11" fill="#1C1C1E">月</text>
+                            <rect x="100" width="40" height="28" rx="14" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                            <text x="115" y="19" font-family="Arial" font-size="11" fill="#1C1C1E">年</text>
+                        </g>
+                        <rect x="16" y="215" width="361" height="220" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">トレーニング時間（週）</text>
+                        <g transform="translate(40, 270)">
+                            <rect x="0" y="90" width="40" height="60" fill="#FF69B4" rx="4"/>
+                            <rect x="50" y="60" width="40" height="90" fill="#FF69B4" rx="4"/>
+                            <rect x="100" y="110" width="40" height="40" fill="#FF69B4" rx="4"/>
+                            <rect x="150" y="40" width="40" height="110" fill="#FF69B4" rx="4"/>
+                            <rect x="200" y="80" width="40" height="70" fill="#FF69B4" rx="4"/>
+                            <rect x="250" y="70" width="40" height="80" fill="#FF69B4" rx="4"/>
+                            <rect x="300" y="100" width="40" height="50" fill="#FF69B4" rx="4"/>
+                            <line x1="0" y1="155" x2="340" y2="155" stroke="#E5E5E7" stroke-width="1"/>
+                            <text x="10" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">月</text>
+                            <text x="60" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">火</text>
+                            <text x="110" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">水</text>
+                            <text x="160" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">木</text>
+                            <text x="210" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">金</text>
+                            <text x="260" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">土</text>
+                            <text x="310" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">日</text>
+                        </g>
+                        <rect x="16" y="450" width="361" height="100" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="475" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">今週のサマリー</text>
+                        <rect x="30" y="490" width="160" height="50" rx="8" fill="#F5F5F5"/>
+                        <text x="40" y="510" font-family="Arial" font-size="10" fill="#3A3A3C">総時間</text>
+                        <text x="40" y="530" font-family="Arial" font-size="20" font-weight="bold" fill="#1C1C1E">245<tspan font-size="12">分</tspan></text>
+                        <rect x="200" y="490" width="160" height="50" rx="8" fill="#F5F5F5"/>
+                        <text x="210" y="510" font-family="Arial" font-size="10" fill="#3A3A3C">消費カロリー</text>
+                        <text x="210" y="530" font-family="Arial" font-size="20" font-weight="bold" fill="#1C1C1E">1,250<tspan font-size="12">kcal</tspan></text>
+                        <rect x="16" y="565" width="361" height="180" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <g transform="translate(30, 585)">
+                            <text x="0" y="0" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">AIマシン</text>
+                            <text x="250" y="0" font-family="Arial" font-size="11" fill="#3A3A3C">今日 18:30</text>
+                            <text x="0" y="18" font-family="Arial" font-size="11" fill="#3A3A3C">⏱ 45分  💪 中</text>
+                            <line x1="0" y1="35" x2="333" y2="35" stroke="#E5E5E7" stroke-width="1"/>
+                            <text x="0" y="60" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">動画トレーニング</text>
+                            <text x="250" y="60" font-family="Arial" font-size="11" fill="#3A3A3C">昨日 19:00</text>
+                            <text x="0" y="78" font-family="Arial" font-size="11" fill="#3A3A3C">⏱ 30分  💪 低</text>
+                            <line x1="0" y1="95" x2="333" y2="95" stroke="#E5E5E7" stroke-width="1"/>
+                            <text x="0" y="120" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">AIマシン</text>
+                            <text x="250" y="120" font-family="Arial" font-size="11" fill="#3A3A3C">一昨日 18:00</text>
+                            <text x="0" y="138" font-family="Arial" font-size="11" fill="#3A3A3C">⏱ 50分  💪 高</text>
+                        </g>
+                        <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+                        <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+                        <text x="112" y="820" font-family="Arial" font-size="10" fill="#FF69B4">📊</text>
+                        <text x="100" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">レポート</text>
+                        <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+                        <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+                        <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+                        <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+                        <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+                        <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Screen 3: QR Code -->
+            <div class="screen-card">
+                <div class="screen-title">
+                    <div class="screen-number">3</div>
+                    <span>入館証画面</span>
+                </div>
+                <div class="screen-description">
+                    QRコード表示、会員情報、店舗選択、利用案内
+                </div>
+                <div class="screen-svg">
+                    <svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="393" height="852" fill="#FFFFFF"/>
+                        <rect width="393" height="44" fill="#FFFFFF"/>
+                        <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+                        <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="170" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">入館証</text>
+                        <g transform="translate(65, 150)">
+                            <rect x="0" y="0" width="263" height="263" rx="16" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="2"/>
+                            <rect x="20" y="20" width="223" height="223" rx="8" fill="#FFFFFF" stroke="#F5F5F5" stroke-width="4"/>
+                            <rect x="30" y="30" width="60" height="60" fill="#000000"/>
+                            <rect x="173" y="30" width="60" height="60" fill="#000000"/>
+                            <rect x="30" y="173" width="60" height="60" fill="#000000"/>
+                            <rect x="50" y="50" width="20" height="20" fill="#FFFFFF"/>
+                            <rect x="193" y="50" width="20" height="20" fill="#FFFFFF"/>
+                            <rect x="50" y="193" width="20" height="20" fill="#FFFFFF"/>
+                            <rect x="100" y="40" width="10" height="10" fill="#000000"/>
+                            <rect x="120" y="40" width="10" height="10" fill="#000000"/>
+                            <rect x="100" y="60" width="10" height="10" fill="#000000"/>
+                            <rect x="140" y="70" width="10" height="10" fill="#000000"/>
+                            <rect x="110" y="90" width="10" height="10" fill="#000000"/>
+                            <rect x="130" y="110" width="10" height="10" fill="#000000"/>
+                            <rect x="150" y="130" width="10" height="10" fill="#000000"/>
+                            <rect x="100" y="150" width="10" height="10" fill="#000000"/>
+                            <rect x="120" y="170" width="10" height="10" fill="#000000"/>
+                            <rect x="140" y="190" width="10" height="10" fill="#000000"/>
+                            <rect x="160" y="210" width="10" height="10" fill="#000000"/>
+                        </g>
+                        <g transform="translate(16, 440)">
+                            <rect x="0" y="0" width="361" height="50" rx="8" fill="#F5F5F5"/>
+                            <text x="15" y="25" font-family="Arial" font-size="12" fill="#3A3A3C">会員ID</text>
+                            <text x="200" y="25" font-family="Arial" font-size="12" font-weight="bold" fill="#1C1C1E">FUR-2024-0123</text>
+                            <rect x="0" y="60" width="361" height="50" rx="8" fill="#F5F5F5"/>
+                            <text x="15" y="85" font-family="Arial" font-size="12" fill="#3A3A3C">お名前</text>
+                            <text x="280" y="85" font-family="Arial" font-size="12" font-weight="bold" fill="#1C1C1E">さくら様</text>
+                            <rect x="0" y="120" width="361" height="50" rx="8" fill="#F5F5F5"/>
+                            <text x="15" y="145" font-family="Arial" font-size="12" fill="#3A3A3C">有効期限</text>
+                            <text x="210" y="145" font-family="Arial" font-size="12" font-weight="bold" fill="#1C1C1E">2025年12月31日</text>
+                        </g>
+                        <rect x="16" y="620" width="361" height="60" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <circle cx="45" cy="650" r="20" fill="#FFE4E1"/>
+                        <text x="40" y="657" font-size="20">🏪</text>
+                        <text x="75" y="640" font-family="Arial" font-size="10" fill="#3A3A3C">利用店舗</text>
+                        <text x="75" y="660" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">渋谷店</text>
+                        <text x="355" y="655" font-family="Arial" font-size="16" fill="#3A3A3C">⌄</text>
+                        <g transform="translate(100, 695)">
+                            <circle cx="8" cy="8" r="8" fill="none" stroke="#FF69B4" stroke-width="1.5"/>
+                            <text x="5" y="11" font-family="Arial" font-size="10" font-weight="bold" fill="#FF69B4">i</text>
+                            <text x="22" y="12" font-family="Arial" font-size="13" fill="#FF69B4">入館方法を見る</text>
+                        </g>
+                        <g transform="translate(100, 730)">
+                            <text x="0" y="0" font-family="Arial" font-size="11" fill="#3A3A3C">QRコードは30秒ごとに自動更新されます</text>
+                            <circle cx="80" cy="18" r="4" fill="#4CAF50"/>
+                            <text x="90" y="22" font-family="Arial" font-size="11" fill="#4CAF50">有効</text>
+                        </g>
+                        <rect x="16" y="765" width="361" height="60" rx="8" fill="#FFE4E1"/>
+                        <text x="30" y="785" font-family="Arial" font-size="11" font-weight="bold" fill="#FF69B4">💡 初めての方へ</text>
+                        <text x="30" y="805" font-family="Arial" font-size="10" fill="#1C1C1E">入館時にこのQRコードをリーダーにかざしてください。</text>
+                        <text x="30" y="820" font-family="Arial" font-size="10" fill="#1C1C1E">店内のマシンでも同じQRコードが使えます。</text>
+                        <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+                        <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+                        <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+                        <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+                        <text x="189" y="820" font-family="Arial" font-size="10" fill="#FF69B4">🎫</text>
+                        <text x="180" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">入館証</text>
+                        <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+                        <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+                        <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+                        <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Screen 4: Reward -->
+            <div class="screen-card">
+                <div class="screen-title">
+                    <div class="screen-number">4</div>
+                    <span>リワード画面</span>
+                </div>
+                <div class="screen-description">
+                    日次チャレンジ、週間・月間チャレンジ、バッジ、実績表示
+                </div>
+                <div class="screen-svg">
+                    <svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="393" height="852" fill="#F5F5F5"/>
+                        <rect width="393" height="44" fill="#FFFFFF"/>
+                        <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+                        <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+                        <text x="165" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">リワード</text>
+                        <rect y="104" width="393" height="50" fill="#FFFFFF"/>
+                        <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="135" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">今日</text>
+                        <line x1="30" y1="152" x2="60" y2="152" stroke="#FF69B4" stroke-width="2"/>
+                        <text x="120" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">週間</text>
+                        <text x="205" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">バッジ</text>
+                        <text x="295" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">実績</text>
+                        <rect x="16" y="170" width="361" height="380" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <g transform="translate(30, 190)">
+                            <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">🎯 今日のチャレンジ</text>
+                            <rect x="230" y="-15" width="60" height="20" rx="10" fill="#F5F5F5"/>
+                            <rect x="230" y="-15" width="36" height="20" rx="10" fill="#FF69B4"/>
+                            <text x="295" y="-2" font-family="Arial" font-size="10" fill="#3A3A3C">3/5</text>
+                            <rect x="0" y="20" width="333" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+                            <circle cx="20" cy="45" r="8" fill="#4CAF50"/>
+                            <text x="16" y="49" font-family="Arial" font-size="10" fill="#FFFFFF">✓</text>
+                            <text x="40" y="40" font-family="Arial" font-size="12" fill="#1C1C1E">アプリを開く</text>
+                            <text x="40" y="56" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: デイリースタンプ 🎫</text>
+                            <rect x="0" y="80" width="333" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+                            <circle cx="20" cy="105" r="8" fill="#4CAF50"/>
+                            <text x="16" y="109" font-family="Arial" font-size="10" fill="#FFFFFF">✓</text>
+                            <text x="40" y="100" font-family="Arial" font-size="12" fill="#1C1C1E">体重を記録する</text>
+                            <text x="40" y="116" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: ヘルスバッジ 🏅</text>
+                            <rect x="0" y="140" width="333" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+                            <circle cx="20" cy="165" r="8" fill="#4CAF50"/>
+                            <text x="16" y="169" font-family="Arial" font-size="10" fill="#FFFFFF">✓</text>
+                            <text x="40" y="160" font-family="Arial" font-size="12" fill="#1C1C1E">混雑状況を確認する</text>
+                            <text x="40" y="176" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: スマートバッジ 🔍</text>
+                            <rect x="0" y="200" width="333" height="50" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="20" cy="225" r="8" fill="none" stroke="#3A3A3C" stroke-width="1.5"/>
+                            <text x="40" y="220" font-family="Arial" font-size="12" fill="#1C1C1E">動画を1本視聴する</text>
+                            <text x="40" y="236" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: トレーナーバッジ 🎬</text>
+                            <rect x="250" y="212" width="70" height="26" rx="13" fill="#FF69B4"/>
+                            <text x="270" y="230" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">視聴</text>
+                            <rect x="0" y="260" width="333" height="50" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="20" cy="285" r="8" fill="none" stroke="#3A3A3C" stroke-width="1.5"/>
+                            <text x="40" y="280" font-family="Arial" font-size="12" fill="#1C1C1E">来店する</text>
+                            <text x="40" y="296" font-family="Arial" font-size="10" fill="#3A3A3C">報酬: フィットネスバッジ 💪</text>
+                        </g>
+                        <rect x="16" y="565" width="361" height="60" rx="8" fill="url(#gradient1)"/>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <text x="30" y="590" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">🎁 全達成ボーナス</text>
+                        <text x="30" y="610" font-family="Arial" font-size="11" fill="#FFFFFF" opacity="0.9">5つすべて達成で特別バッジ獲得！</text>
+                        <rect x="16" y="640" width="361" height="100" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="665" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">💪 継続は力なり</text>
+                        <text x="30" y="690" font-family="Arial" font-size="12" fill="#3A3A3C">今週のチャレンジ達成率: 85%</text>
+                        <rect x="30" y="700" width="333" height="8" rx="4" fill="#F5F5F5"/>
+                        <rect x="30" y="700" width="283" height="8" rx="4" fill="#FF69B4"/>
+                        <text x="30" y="725" font-family="Arial" font-size="11" fill="#FF69B4">あと少しで週間目標達成！</text>
+                        <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+                        <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+                        <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+                        <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+                        <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+                        <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+                        <text x="262" y="820" font-family="Arial" font-size="10" fill="#FF69B4">🏆</text>
+                        <text x="250" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">リワード</text>
+                        <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+                        <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Screen 5: Menu -->
+            <div class="screen-card">
+                <div class="screen-title">
+                    <div class="screen-number">5</div>
+                    <span>メニュー画面</span>
+                </div>
+                <div class="screen-description">
+                    プロフィール、利用ガイド、コンテンツ、設定、ログアウト
+                </div>
+                <div class="screen-svg">
+                    <svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="393" height="852" fill="#F5F5F5"/>
+                        <rect width="393" height="44" fill="#FFFFFF"/>
+                        <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+                        <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+                        <text x="165" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">メニュー</text>
+                        <rect x="16" y="120" width="361" height="140" rx="16" fill="url(#gradient2)"/>
+                        <defs>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="155" r="25" fill="#FFFFFF"/>
+                        <text x="43" y="165" font-size="24" fill="#FF69B4">👤</text>
+                        <text x="85" y="155" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">さくら様</text>
+                        <text x="85" y="175" font-family="Arial" font-size="12" fill="#FFFFFF" opacity="0.9">会員ID: FUR-2024-0123</text>
+                        <rect x="30" y="195" width="103" height="50" rx="8" fill="#FFFFFF" opacity="0.2"/>
+                        <text x="50" y="215" font-family="Arial" font-size="10" fill="#FFFFFF" opacity="0.9">会員歴</text>
+                        <text x="48" y="235" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">3ヶ月</text>
+                        <rect x="145" y="195" width="103" height="50" rx="8" fill="#FFFFFF" opacity="0.2"/>
+                        <text x="162" y="215" font-family="Arial" font-size="10" fill="#FFFFFF" opacity="0.9">来店回数</text>
+                        <text x="173" y="235" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">52回</text>
+                        <rect x="260" y="195" width="103" height="50" rx="8" fill="#FFFFFF" opacity="0.2"/>
+                        <text x="283" y="215" font-family="Arial" font-size="10" fill="#FFFFFF" opacity="0.9">バッジ</text>
+                        <text x="285" y="235" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">15個</text>
+                        <rect x="16" y="275" width="361" height="40" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="300" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">利用ガイド</text>
+                        <rect x="16" y="315" width="361" height="180" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <g transform="translate(30, 335)">
+                            <circle cx="15" cy="10" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="16" font-size="16">📖</text>
+                            <text x="40" y="15" font-family="Arial" font-size="13" fill="#1C1C1E">はじめての方へ</text>
+                            <text x="320" y="15" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                            <line x1="0" y1="30" x2="333" y2="30" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="15" cy="55" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="61" font-size="16">🎬</text>
+                            <text x="40" y="60" font-family="Arial" font-size="13" fill="#1C1C1E">アプリの使い方</text>
+                            <text x="320" y="60" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                            <line x1="0" y1="75" x2="333" y2="75" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="15" cy="100" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="106" font-size="16">💡</text>
+                            <text x="40" y="105" font-family="Arial" font-size="13" fill="#1C1C1E">AIマシンの使い方</text>
+                            <text x="320" y="105" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                            <line x1="0" y1="120" x2="333" y2="120" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="15" cy="145" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="151" font-size="16">📏</text>
+                            <text x="40" y="150" font-family="Arial" font-size="13" fill="#1C1C1E">測定機器の使い方</text>
+                            <text x="320" y="150" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                        </g>
+                        <rect x="16" y="510" width="361" height="40" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="535" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">コンテンツ</text>
+                        <rect x="16" y="550" width="361" height="135" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <g transform="translate(30, 570)">
+                            <circle cx="15" cy="10" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="16" font-size="16">🎬</text>
+                            <text x="40" y="15" font-family="Arial" font-size="13" fill="#1C1C1E">動画トレーニング一覧</text>
+                            <text x="320" y="15" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                            <line x1="0" y1="30" x2="333" y2="30" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="15" cy="55" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="61" font-size="16">🔔</text>
+                            <text x="40" y="60" font-family="Arial" font-size="13" fill="#1C1C1E">お知らせ一覧</text>
+                            <rect x="180" y="48" width="30" height="18" rx="9" fill="#FF0000"/>
+                            <text x="190" y="61" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">3</text>
+                            <text x="320" y="60" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                            <line x1="0" y1="75" x2="333" y2="75" stroke="#E5E5E7" stroke-width="1"/>
+                            <circle cx="15" cy="100" r="15" fill="#FFE4E1"/>
+                            <text x="10" y="106" font-size="16">❓</text>
+                            <text x="40" y="105" font-family="Arial" font-size="13" fill="#1C1C1E">FAQ・よくある質問</text>
+                            <text x="320" y="105" font-family="Arial" font-size="16" fill="#3A3A3C">›</text>
+                        </g>
+                        <rect x="16" y="700" width="361" height="40" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="725" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">設定</text>
+                        <rect x="16" y="740" width="361" height="50" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="165" y="770" font-family="Arial" font-size="13" font-weight="bold" fill="#FF0000">🚪 ログアウト</text>
+                        <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+                        <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+                        <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+                        <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+                        <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+                        <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+                        <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+                        <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+                        <text x="338" y="820" font-family="Arial" font-size="10" fill="#FF69B4">⚙️</text>
+                        <text x="330" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">メニュー</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Screen 6: DNA Result -->
+            <div class="screen-card">
+                <div class="screen-title">
+                    <div class="screen-number">6</div>
+                    <span>DNA検査結果画面</span>
+                </div>
+                <div class="screen-description">
+                    遺伝子検査結果表示、体質分析、トレーニング推奨
+                </div>
+                <div class="screen-svg">
+                    <svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="393" height="852" fill="#F5F5F5"/>
+                        <rect width="393" height="44" fill="#FFFFFF"/>
+                        <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+                        <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+                        <text x="20" y="80" font-family="Arial" font-size="16" fill="#3A3A3C">‹</text>
+                        <text x="150" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">DNA検査結果</text>
+                        <rect x="16" y="120" width="361" height="60" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+                        <text x="30" y="145" font-family="Arial" font-size="12" fill="#1C1C1E">検査日: 2024年8月15日</text>
+                        <text x="30" y="165" font-family="Arial" font-size="13" font-weight="bold" fill="#2196F3">検査機関: GeneQuest</text>
+                        <circle cx="350" cy="150" r="16" fill="#2196F3" opacity="0.2"/>
+                        <text x="345" y="156" font-family="Arial" font-size="16" fill="#2196F3">🧬</text>
+                        <rect y="195" width="393" height="50" fill="#FFFFFF"/>
+                        <line x1="0" y1="195" x2="393" y2="195" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="25" y="225" font-family="Arial" font-size="13" font-weight="bold" fill="#2196F3">総合</text>
+                        <line x1="20" y1="243" x2="55" y2="243" stroke="#2196F3" stroke-width="2"/>
+                        <text x="85" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">筋肉</text>
+                        <text x="145" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">代謝</text>
+                        <text x="205" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">リスク</text>
+                        <text x="270" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">詳細</text>
+                        <rect x="16" y="260" width="361" height="240" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="30" y="285" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">体質スコア</text>
+                        <g transform="translate(196.5, 395)">
+                            <circle cx="0" cy="0" r="80" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+                            <circle cx="0" cy="0" r="60" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+                            <circle cx="0" cy="0" r="40" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+                            <circle cx="0" cy="0" r="20" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="-80" stroke="#E5E5E7" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="69" y2="-40" stroke="#E5E5E7" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="69" y2="40" stroke="#E5E5E7" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="80" stroke="#E5E5E7" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="-69" y2="40" stroke="#E5E5E7" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="-69" y2="-40" stroke="#E5E5E7" stroke-width="1"/>
+                            <polygon points="0,-64 55,-32 48,32 0,56 -48,32 -55,-32" fill="#2196F3" fill-opacity="0.3" stroke="#2196F3" stroke-width="2"/>
+                            <text x="-15" y="-90" font-family="Arial" font-size="10" fill="#3A3A3C">筋力</text>
+                            <text x="75" y="-35" font-family="Arial" font-size="10" fill="#3A3A3C">持久力</text>
+                            <text x="75" y="45" font-family="Arial" font-size="10" fill="#3A3A3C">代謝</text>
+                            <text x="-15" y="95" font-family="Arial" font-size="10" fill="#3A3A3C">回復</text>
+                            <text x="-90" y="45" font-family="Arial" font-size="10" fill="#3A3A3C">柔軟性</text>
+                            <text x="-90" y="-35" font-family="Arial" font-size="10" fill="#3A3A3C">総合</text>
+                        </g>
+                        <rect x="16" y="515" width="361" height="100" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+                        <circle cx="45" cy="555" r="20" fill="#2196F3" opacity="0.2"/>
+                        <text x="38" y="562" font-family="Arial" font-size="20" fill="#2196F3">💪</text>
+                        <text x="75" y="545" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">あなたの体質タイプ</text>
+                        <text x="75" y="570" font-family="Arial" font-size="16" font-weight="bold" fill="#2196F3">持久力優位型</text>
+                        <text x="75" y="590" font-family="Arial" font-size="11" fill="#3A3A3C">遺伝的に長時間の運動に向いています</text>
+                        <text x="300" y="565" font-family="Arial" font-size="28" fill="#2196F3">★★★★☆</text>
+                        <rect x="16" y="630" width="175" height="100" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="26" y="650" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">ACTN3遺伝子</text>
+                        <text x="26" y="665" font-family="Arial" font-size="9" fill="#3A3A3C">(筋肉タイプ)</text>
+                        <rect x="26" y="675" width="50" height="20" rx="10" fill="#E8F5E9"/>
+                        <text x="38" y="689" font-family="Arial" font-size="11" font-weight="bold" fill="#4CAF50">XX型</text>
+                        <text x="26" y="710" font-family="Arial" font-size="10" fill="#3A3A3C">持久力に優れる</text>
+                        <rect x="202" y="630" width="175" height="100" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="212" y="650" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">ACE遺伝子</text>
+                        <text x="212" y="665" font-family="Arial" font-size="9" fill="#3A3A3C">(持久力)</text>
+                        <rect x="212" y="675" width="45" height="20" rx="10" fill="#E3F2FD"/>
+                        <text x="222" y="689" font-family="Arial" font-size="11" font-weight="bold" fill="#2196F3">II型</text>
+                        <text x="212" y="710" font-family="Arial" font-size="10" fill="#3A3A3C">持久力が高い</text>
+                        <rect x="16" y="745" width="361" height="90" rx="12" fill="#FFF3E0"/>
+                        <text x="30" y="765" font-family="Arial" font-size="12" font-weight="bold" fill="#FF9800">💡 あなたにおすすめ</text>
+                        <text x="30" y="785" font-family="Arial" font-size="11" fill="#1C1C1E">• 有酸素運動を中心に</text>
+                        <text x="30" y="800" font-family="Arial" font-size="11" fill="#1C1C1E">• 長時間の低〜中強度トレーニング</text>
+                        <text x="30" y="815" font-family="Arial" font-size="11" fill="#1C1C1E">• マラソン・サイクリング・水泳</text>
+                        <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+                        <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+                        <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+                        <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+                        <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+                        <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+                        <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+                        <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+                        <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+                        <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+                        <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen Transition Diagram -->
+        <div class="info-section" style="margin-top: 60px;">
+            <div class="info-title">🔄 画面遷移図</div>
+            <div class="info-content" style="margin-bottom: 20px;">
+                <p>タブバーによる5画面間のシームレスな移動と、アクションベースの画面遷移を示した構成図です。</p>
+            </div>
+            <div style="background: white; border-radius: 16px; padding: 20px; overflow-x: auto;">
+                <svg width="1200" height="1100" viewBox="0 0 1200 1100" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+                    <text x="600" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#1C1C1E" text-anchor="middle">MyFurdi アプリ画面遷移図</text>
+                    <text x="600" y="65" font-family="Arial" font-size="12" fill="#3A3A3C" text-anchor="middle">FURDI会員向けフィットネスサポートアプリ</text>
+                    <g transform="translate(50, 90)">
+                        <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#1C1C1E">凡例:</text>
+                        <line x1="50" y1="-5" x2="100" y2="-5" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                        <text x="110" y="0" font-family="Arial" font-size="10" fill="#3A3A3C">タブバー遷移</text>
+                        <line x1="200" y1="-5" x2="250" y2="-5" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowGreen)"/>
+                        <text x="260" y="0" font-family="Arial" font-size="10" fill="#3A3A3C">アクション遷移</text>
+                        <circle cx="380" cy="-5" r="6" fill="#FFE4E1"/>
+                        <text x="395" y="0" font-family="Arial" font-size="10" fill="#3A3A3C">主要機能</text>
+                    </g>
+                    <defs>
+                        <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                            <path d="M0,0 L0,6 L9,3 z" fill="#FF69B4"/>
+                        </marker>
+                        <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                            <path d="M0,0 L0,6 L9,3 z" fill="#4CAF50"/>
+                        </marker>
+                    </defs>
+                    <g id="home-screen" transform="translate(500, 200)">
+                        <rect x="0" y="0" width="200" height="280" rx="12" fill="#FFFFFF" stroke="#FF69B4" stroke-width="3"/>
+                        <rect x="0" y="0" width="200" height="50" rx="12" fill="#FF69B4"/>
+                        <text x="100" y="32" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🏠 ホーム画面</text>
+                        <circle cx="20" cy="75" r="6" fill="#FFE4E1"/>
+                        <text x="35" y="80" font-family="Arial" font-size="11" fill="#1C1C1E">今日のチャレンジ</text>
+                        <circle cx="20" cy="105" r="6" fill="#FFE4E1"/>
+                        <text x="35" y="110" font-family="Arial" font-size="11" fill="#1C1C1E">来店サマリー</text>
+                        <circle cx="20" cy="135" r="6" fill="#FFE4E1"/>
+                        <text x="35" y="140" font-family="Arial" font-size="11" fill="#1C1C1E">混雑状況</text>
+                        <circle cx="20" cy="165" r="6" fill="#FFE4E1"/>
+                        <text x="35" y="170" font-family="Arial" font-size="11" fill="#1C1C1E">健康データ</text>
+                        <circle cx="20" cy="195" r="6" fill="#FFE4E1"/>
+                        <text x="35" y="200" font-family="Arial" font-size="11" fill="#1C1C1E">お知らせ通知</text>
+                        <line x1="10" y1="215" x2="190" y2="215" stroke="#E5E5E7" stroke-width="1"/>
+                        <text x="100" y="235" font-family="Arial" font-size="10" fill="#3A3A3C" text-anchor="middle">主要アクション:</text>
+                        <text x="100" y="250" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">• 体重記録</text>
+                        <text x="100" y="265" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">• 混雑確認→予約</text>
+                    </g>
+                    <g id="report-screen" transform="translate(100, 150)">
+                        <rect x="0" y="0" width="180" height="200" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="2"/>
+                        <rect x="0" y="0" width="180" height="40" rx="12" fill="#4CAF50"/>
+                        <text x="90" y="27" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">📊 レポート画面</text>
+                        <circle cx="15" cy="60" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="65" font-family="Arial" font-size="10" fill="#1C1C1E">運動記録タブ</text>
+                        <circle cx="15" cy="85" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="90" font-family="Arial" font-size="10" fill="#1C1C1E">体組成タブ</text>
+                        <circle cx="15" cy="110" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="115" font-family="Arial" font-size="10" fill="#1C1C1E">来館履歴タブ</text>
+                        <circle cx="15" cy="135" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="140" font-family="Arial" font-size="10" fill="#1C1C1E">グラフ表示</text>
+                        <circle cx="15" cy="160" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="165" font-family="Arial" font-size="10" fill="#1C1C1E">期間フィルター</text>
+                        <text x="90" y="185" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">(週/月/年)</text>
+                    </g>
+                    <g id="qr-screen" transform="translate(920, 150)">
+                        <rect x="0" y="0" width="180" height="200" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="2"/>
+                        <rect x="0" y="0" width="180" height="40" rx="12" fill="#9C27B0"/>
+                        <text x="90" y="27" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🎫 入館証画面</text>
+                        <circle cx="15" cy="60" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="65" font-family="Arial" font-size="10" fill="#1C1C1E">QRコード表示</text>
+                        <circle cx="15" cy="85" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="90" font-family="Arial" font-size="10" fill="#1C1C1E">会員情報</text>
+                        <circle cx="15" cy="110" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="115" font-family="Arial" font-size="10" fill="#1C1C1E">利用店舗選択</text>
+                        <circle cx="15" cy="135" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="140" font-family="Arial" font-size="10" fill="#1C1C1E">自動更新(30秒)</text>
+                        <circle cx="15" cy="160" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="165" font-family="Arial" font-size="10" fill="#1C1C1E">利用案内</text>
+                        <text x="90" y="185" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">入館・マシン利用</text>
+                    </g>
+                    <g id="reward-screen" transform="translate(100, 600)">
+                        <rect x="0" y="0" width="180" height="220" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="2"/>
+                        <rect x="0" y="0" width="180" height="40" rx="12" fill="#FF9800"/>
+                        <text x="90" y="27" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🏆 リワード画面</text>
+                        <circle cx="15" cy="60" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="65" font-family="Arial" font-size="10" fill="#1C1C1E">今日タブ</text>
+                        <circle cx="15" cy="85" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="90" font-family="Arial" font-size="10" fill="#1C1C1E">週間タブ</text>
+                        <circle cx="15" cy="110" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="115" font-family="Arial" font-size="10" fill="#1C1C1E">バッジタブ</text>
+                        <circle cx="15" cy="135" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="140" font-family="Arial" font-size="10" fill="#1C1C1E">実績タブ</text>
+                        <circle cx="15" cy="160" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="165" font-family="Arial" font-size="10" fill="#1C1C1E">チャレンジ進捗</text>
+                        <circle cx="15" cy="185" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="190" font-family="Arial" font-size="10" fill="#1C1C1E">達成ボーナス</text>
+                        <text x="90" y="210" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">ゲーミフィケーション</text>
+                    </g>
+                    <g id="menu-screen" transform="translate(920, 600)">
+                        <rect x="0" y="0" width="180" height="220" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="2"/>
+                        <rect x="0" y="0" width="180" height="40" rx="12" fill="#607D8B"/>
+                        <text x="90" y="27" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">⚙️ メニュー画面</text>
+                        <circle cx="15" cy="60" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="65" font-family="Arial" font-size="10" fill="#1C1C1E">ユーザープロフィール</text>
+                        <circle cx="15" cy="85" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="90" font-family="Arial" font-size="10" fill="#1C1C1E">利用ガイド</text>
+                        <circle cx="15" cy="110" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="115" font-family="Arial" font-size="10" fill="#1C1C1E">コンテンツ</text>
+                        <circle cx="15" cy="135" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="140" font-family="Arial" font-size="10" fill="#1C1C1E">動画トレーニング</text>
+                        <circle cx="15" cy="160" r="5" fill="#E3F2FD"/>
+                        <text x="28" y="165" font-family="Arial" font-size="10" fill="#2196F3" font-weight="bold">DNA検査結果</text>
+                        <circle cx="15" cy="185" r="5" fill="#FFE4E1"/>
+                        <text x="28" y="190" font-family="Arial" font-size="10" fill="#1C1C1E">設定・ログアウト</text>
+                        <text x="90" y="210" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">情報・設定</text>
+                    </g>
+                    <g id="dna-screen" transform="translate(350, 600)">
+                        <rect x="0" y="250" width="180" height="200" rx="12" fill="#FFFFFF" stroke="#2196F3" stroke-width="2"/>
+                        <rect x="0" y="250" width="180" height="40" rx="12" fill="#2196F3"/>
+                        <text x="90" y="277" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🧬 DNA検査結果</text>
+                        <circle cx="15" cy="310" r="5" fill="#E3F2FD"/>
+                        <text x="28" y="315" font-family="Arial" font-size="10" fill="#1C1C1E">総合評価</text>
+                        <circle cx="15" cy="335" r="5" fill="#E3F2FD"/>
+                        <text x="28" y="340" font-family="Arial" font-size="10" fill="#1C1C1E">筋肉タイプ</text>
+                        <circle cx="15" cy="360" r="5" fill="#E3F2FD"/>
+                        <text x="28" y="365" font-family="Arial" font-size="10" fill="#1C1C1E">代謝分析</text>
+                        <circle cx="15" cy="385" r="5" fill="#E3F2FD"/>
+                        <text x="28" y="390" font-family="Arial" font-size="10" fill="#1C1C1E">怪我リスク</text>
+                        <circle cx="15" cy="410" r="5" fill="#E3F2FD"/>
+                        <text x="28" y="415" font-family="Arial" font-size="10" fill="#1C1C1E">詳細データ</text>
+                        <text x="90" y="435" font-family="Arial" font-size="9" fill="#3A3A3C" text-anchor="middle">遺伝子分析</text>
+                    </g>
+                    <path d="M 500,340 Q 400,370 280,280" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 280,240 Q 400,300 500,320" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 700,340 Q 800,370 920,280" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 920,240 Q 800,300 700,320" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 500,480 Q 400,540 280,700" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 280,740 Q 400,580 500,500" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 700,480 Q 800,540 920,700" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 920,740 Q 800,580 700,500" fill="none" stroke="#FF69B4" stroke-width="2" marker-end="url(#arrowPink)"/>
+                    <path d="M 580,480 L 250,600" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowGreen)"/>
+                    <text x="420" y="530" font-family="Arial" font-size="10" fill="#4CAF50">チャレンジ達成</text>
+                    <path d="M 550,200 L 280,200" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowGreen)"/>
+                    <text x="400" y="190" font-family="Arial" font-size="10" fill="#4CAF50">健康データ詳細</text>
+                    <path d="M 920,720 L 700,400" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowGreen)"/>
+                    <text x="800" y="550" font-family="Arial" font-size="10" fill="#4CAF50">動画視聴</text>
+                    <path d="M 920,730 Q 650,800 530,850" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowGreen)"/>
+                    <text x="700" y="800" font-family="Arial" font-size="10" fill="#2196F3">DNA検査</text>
+                    <g transform="translate(450, 540)">
+                        <rect x="0" y="0" width="300" height="60" rx="8" fill="#FFFFFF" stroke="#FF69B4" stroke-width="2"/>
+                        <text x="150" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#FF69B4" text-anchor="middle">タブバーナビゲーション</text>
+                        <text x="30" y="40" font-family="Arial" font-size="10" fill="#1C1C1E">🏠</text>
+                        <text x="90" y="40" font-family="Arial" font-size="10" fill="#1C1C1E">📊</text>
+                        <text x="150" y="40" font-family="Arial" font-size="10" fill="#1C1C1E">🎫</text>
+                        <text x="210" y="40" font-family="Arial" font-size="10" fill="#1C1C1E">🏆</text>
+                        <text x="270" y="40" font-family="Arial" font-size="10" fill="#1C1C1E">⚙️</text>
+                        <text x="25" y="52" font-family="Arial" font-size="8" fill="#3A3A3C">Home</text>
+                        <text x="80" y="52" font-family="Arial" font-size="8" fill="#3A3A3C">Report</text>
+                        <text x="140" y="52" font-family="Arial" font-size="8" fill="#3A3A3C">QR</text>
+                        <text x="200" y="52" font-family="Arial" font-size="8" fill="#3A3A3C">Reward</text>
+                        <text x="260" y="52" font-family="Arial" font-size="8" fill="#3A3A3C">Menu</text>
+                    </g>
+                    <g transform="translate(50, 1050)">
+                        <text x="0" y="0" font-family="Arial" font-size="11" font-weight="bold" fill="#1C1C1E">画面遷移の特徴:</text>
+                        <text x="0" y="20" font-family="Arial" font-size="10" fill="#3A3A3C">• タブバーによる5画面間のシームレスな移動</text>
+                        <text x="300" y="20" font-family="Arial" font-size="10" fill="#3A3A3C">• ホーム画面を中心としたハブ構造</text>
+                        <text x="600" y="20" font-family="Arial" font-size="10" fill="#3A3A3C">• アクションベースの画面遷移でUX向上</text>
+                        <text x="950" y="20" font-family="Arial" font-size="10" fill="#3A3A3C">• メニューからDNA検査結果へ遷移</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>MyFURDI Wireframes v1.0</strong></p>
+            <p>全6画面 + 画面遷移図 | iPhone 14 Pro (393×852px) | Design System準拠</p>
+            <p style="margin-top: 15px; font-size: 14px;">
+                このHTMLファイルをFigmaの「html.to.design」プラグインでインポートしてください
+            </p>
+        </div>
+    </div>
+</body>
+</html>

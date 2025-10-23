@@ -1,0 +1,120 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#F5F5F5"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+
+  <!-- Header -->
+  <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="75" font-family="Arial" font-size="16" fill="#FF69B4">‹</text>
+  <text x="130" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">連携サービス管理</text>
+
+  <!-- Intro Text -->
+  <text x="16" y="130" font-family="Arial" font-size="12" fill="#3A3A3C">外部サービスと連携してデータを自動取得できます</text>
+
+  <!-- Integration Services List -->
+
+  <!-- New Pix -->
+  <rect x="16" y="150" width="361" height="110" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 170)">
+    <circle cx="25" cy="25" r="25" fill="#FF69B4"/>
+    <text x="15" y="33" font-size="20" fill="#FFFFFF">🔗</text>
+
+    <text x="60" y="18" font-family="Arial" font-size="15" font-weight="bold" fill="#1C1C1E">新Pix</text>
+    <text x="60" y="35" font-family="Arial" font-size="11" fill="#3A3A3C">AIマシン運動データの自動取得</text>
+
+    <circle cx="8" cy="65" r="4" fill="#4CAF50"/>
+    <text x="18" y="69" font-family="Arial" font-size="11" fill="#4CAF50">連携済み</text>
+    <text x="100" y="69" font-family="Arial" font-size="10" fill="#3A3A3C">最終同期: 5分前</text>
+
+    <rect x="230" y="55" width="100" height="28" rx="14" fill="#F5F5F5"/>
+    <text x="250" y="74" font-family="Arial" font-size="12" fill="#FF0000">連携を解除</text>
+  </g>
+
+  <!-- Q.Pix -->
+  <rect x="16" y="275" width="361" height="110" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 295)">
+    <circle cx="25" cy="25" r="25" fill="#E5E5E7"/>
+    <text x="15" y="33" font-size="20" fill="#3A3A3C">📱</text>
+
+    <text x="60" y="18" font-family="Arial" font-size="15" font-weight="bold" fill="#1C1C1E">Q.Pix（旧システム）</text>
+    <text x="60" y="35" font-family="Arial" font-size="11" fill="#3A3A3C">旧マシン運動データの取得</text>
+
+    <circle cx="8" cy="65" r="4" fill="#CCCCCC"/>
+    <text x="18" y="69" font-family="Arial" font-size="11" fill="#3A3A3C">未連携（店舗未対応）</text>
+
+    <rect x="230" y="55" width="100" height="28" rx="14" fill="#CCCCCC"/>
+    <text x="255" y="74" font-family="Arial" font-size="12" fill="#FFFFFF">利用不可</text>
+  </g>
+
+  <!-- Tanita -->
+  <rect x="16" y="400" width="361" height="110" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 420)">
+    <circle cx="25" cy="25" r="25" fill="#2196F3"/>
+    <text x="15" y="33" font-size="20" fill="#FFFFFF">⚖️</text>
+
+    <text x="60" y="18" font-family="Arial" font-size="15" font-weight="bold" fill="#1C1C1E">タニタ体組成計</text>
+    <text x="60" y="35" font-family="Arial" font-size="11" fill="#3A3A3C">体組成データの自動取得</text>
+
+    <circle cx="8" cy="65" r="4" fill="#FF9800"/>
+    <text x="18" y="69" font-family="Arial" font-size="11" fill="#FF9800">要再ログイン</text>
+    <text x="100" y="69" font-family="Arial" font-size="10" fill="#3A3A3C">トークン期限切れ</text>
+
+    <rect x="230" y="55" width="100" height="28" rx="14" fill="#FF69B4"/>
+    <text x="252" y="74" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">再連携</text>
+  </g>
+
+  <!-- DNA Services -->
+  <rect x="16" y="525" width="361" height="110" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 545)">
+    <circle cx="25" cy="25" r="25" fill="#9C27B0"/>
+    <text x="15" y="33" font-size="20" fill="#FFFFFF">🧬</text>
+
+    <text x="60" y="18" font-family="Arial" font-size="15" font-weight="bold" fill="#1C1C1E">DNA検査サービス</text>
+    <text x="60" y="35" font-family="Arial" font-size="11" fill="#3A3A3C">遺伝子検査結果の連携</text>
+
+    <circle cx="8" cy="65" r="4" fill="#CCCCCC"/>
+    <text x="18" y="69" font-family="Arial" font-size="11" fill="#3A3A3C">未連携</text>
+
+    <rect x="230" y="55" width="100" height="28" rx="14" fill="#FF69B4"/>
+    <text x="260" y="74" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">連携</text>
+  </g>
+
+  <!-- Data Sync Settings -->
+  <rect x="16" y="650" width="361" height="40" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="675" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">データ同期設定</text>
+
+  <rect x="16" y="690" width="361" height="90" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 710)">
+    <text x="0" y="0" font-family="Arial" font-size="13" fill="#1C1C1E">自動同期</text>
+    <text x="0" y="18" font-family="Arial" font-size="11" fill="#3A3A3C">アプリ起動時に自動でデータを取得</text>
+    <rect x="280" y="-10" width="50" height="28" rx="14" fill="#4CAF50"/>
+    <circle cx="315" cy="4" r="10" fill="#FFFFFF"/>
+
+    <line x1="0" y1="30" x2="333" y2="30" stroke="#E5E5E7" stroke-width="1"/>
+
+    <text x="0" y="50" font-family="Arial" font-size="13" fill="#1C1C1E">Wi-Fi接続時のみ同期</text>
+    <rect x="280" y="30" width="50" height="28" rx="14" fill="#E5E5E7"/>
+    <circle cx="295" cy="44" r="10" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Tab Bar -->
+  <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+  <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+  <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+  <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+  <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+  <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+  <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+  <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+  <text x="338" y="820" font-family="Arial" font-size="10" fill="#FF69B4">⚙️</text>
+  <text x="330" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">メニュー</text>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: 連携サービス管理画面 | 主要機能: 連携状態表示、連携/解除、自動同期設定</text>
+</svg>

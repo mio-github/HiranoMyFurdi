@@ -1,0 +1,98 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#F5F5F5"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+
+  <!-- Header -->
+  <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+  <text x="170" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">レポート</text>
+
+  <!-- Tabs -->
+  <rect y="104" width="393" height="50" fill="#FFFFFF"/>
+  <line x1="0" y1="104" x2="393" y2="104" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="50" y="135" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">運動記録</text>
+  <line x1="40" y1="152" x2="110" y2="152" stroke="#FF69B4" stroke-width="2"/>
+  <text x="170" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">体組成</text>
+  <text x="270" y="135" font-family="Arial" font-size="13" fill="#3A3A3C">来館履歴</text>
+
+  <!-- Period Filter -->
+  <g transform="translate(16, 170)">
+    <rect width="40" height="28" rx="14" fill="#FF69B4"/>
+    <text x="15" y="19" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">週</text>
+    <rect x="50" width="40" height="28" rx="14" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="65" y="19" font-family="Arial" font-size="11" fill="#1C1C1E">月</text>
+    <rect x="100" width="40" height="28" rx="14" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="115" y="19" font-family="Arial" font-size="11" fill="#1C1C1E">年</text>
+  </g>
+
+  <!-- Chart Card -->
+  <rect x="16" y="215" width="361" height="220" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">トレーニング時間（週）</text>
+
+  <!-- Bar Chart -->
+  <g transform="translate(40, 270)">
+    <rect x="0" y="90" width="40" height="60" fill="#FF69B4" rx="4"/>
+    <rect x="50" y="60" width="40" height="90" fill="#FF69B4" rx="4"/>
+    <rect x="100" y="110" width="40" height="40" fill="#FF69B4" rx="4"/>
+    <rect x="150" y="40" width="40" height="110" fill="#FF69B4" rx="4"/>
+    <rect x="200" y="80" width="40" height="70" fill="#FF69B4" rx="4"/>
+    <rect x="250" y="70" width="40" height="80" fill="#FF69B4" rx="4"/>
+    <rect x="300" y="100" width="40" height="50" fill="#FF69B4" rx="4"/>
+    <line x1="0" y1="155" x2="340" y2="155" stroke="#E5E5E7" stroke-width="1"/>
+    <text x="10" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">月</text>
+    <text x="60" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">火</text>
+    <text x="110" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">水</text>
+    <text x="160" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">木</text>
+    <text x="210" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">金</text>
+    <text x="260" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">土</text>
+    <text x="310" y="170" font-family="Arial" font-size="10" fill="#3A3A3C">日</text>
+  </g>
+
+  <!-- Summary Card -->
+  <rect x="16" y="450" width="361" height="100" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="475" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">今週のサマリー</text>
+  <rect x="30" y="490" width="160" height="50" rx="8" fill="#F5F5F5"/>
+  <text x="40" y="510" font-family="Arial" font-size="10" fill="#3A3A3C">総時間</text>
+  <text x="40" y="530" font-family="Arial" font-size="20" font-weight="bold" fill="#1C1C1E">245<tspan font-size="12">分</tspan></text>
+  <rect x="200" y="490" width="160" height="50" rx="8" fill="#F5F5F5"/>
+  <text x="210" y="510" font-family="Arial" font-size="10" fill="#3A3A3C">消費カロリー</text>
+  <text x="210" y="530" font-family="Arial" font-size="20" font-weight="bold" fill="#1C1C1E">1,250<tspan font-size="12">kcal</tspan></text>
+
+  <!-- Exercise List -->
+  <rect x="16" y="565" width="361" height="180" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <g transform="translate(30, 585)">
+    <text x="0" y="0" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">AIマシン</text>
+    <text x="250" y="0" font-family="Arial" font-size="11" fill="#3A3A3C">今日 18:30</text>
+    <text x="0" y="18" font-family="Arial" font-size="11" fill="#3A3A3C">⏱ 45分  💪 中</text>
+    <line x1="0" y1="35" x2="333" y2="35" stroke="#E5E5E7" stroke-width="1"/>
+
+    <text x="0" y="60" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">動画トレーニング</text>
+    <text x="250" y="60" font-family="Arial" font-size="11" fill="#3A3A3C">昨日 19:00</text>
+    <text x="0" y="78" font-family="Arial" font-size="11" fill="#3A3A3C">⏱ 30分  💪 低</text>
+    <line x1="0" y1="95" x2="333" y2="95" stroke="#E5E5E7" stroke-width="1"/>
+
+    <text x="0" y="120" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">AIマシン</text>
+    <text x="250" y="120" font-family="Arial" font-size="11" fill="#3A3A3C">一昨日 18:00</text>
+    <text x="0" y="138" font-family="Arial" font-size="11" fill="#3A3A3C">⏱ 50分  💪 高</text>
+  </g>
+
+  <!-- Tab Bar -->
+  <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+  <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+  <text x="112" y="820" font-family="Arial" font-size="10" fill="#FF69B4">📊</text>
+  <text x="100" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">レポート</text>
+  <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+  <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+  <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+  <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+  <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+  <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: レポート画面 | 主要機能: 運動記録グラフ、体組成データ、来館履歴</text>
+</svg>

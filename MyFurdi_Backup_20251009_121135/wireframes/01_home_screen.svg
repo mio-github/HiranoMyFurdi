@@ -1,0 +1,77 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#F5F5F5"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+  <text x="350" y="30" font-family="Arial" font-size="12" fill="#000">📶 🔋</text>
+
+  <!-- Header -->
+  <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+  <text x="20" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">おはようございます、さくらさん！</text>
+  <circle cx="360" cy="74" r="12" fill="none" stroke="#FF69B4" stroke-width="2"/>
+  <text x="356" y="78" font-size="10">🔔</text>
+
+  <!-- Today's Challenge Card -->
+  <rect x="16" y="120" width="361" height="140" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="145" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">🎯 今日のチャレンジ</text>
+  <rect x="30" y="155" width="333" height="60" rx="8" fill="#FFE4E1"/>
+  <text x="40" y="180" font-family="Arial" font-size="13" fill="#1C1C1E">体重を記録する</text>
+  <text x="40" y="200" font-family="Arial" font-size="11" fill="#FF69B4">報酬: デイリーバッジ 🏅</text>
+  <rect x="30" y="225" width="333" height="32" rx="16" fill="#FF69B4"/>
+  <text x="140" y="245" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">1タップで記録する</text>
+
+  <!-- Visit Summary Card -->
+  <rect x="16" y="275" width="361" height="140" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#1C1C1E">🔥 5日連続来店中！</text>
+  <text x="30" y="325" font-family="Arial" font-size="12" fill="#3A3A3C">今週の来店</text>
+  <text x="340" y="325" font-family="Arial" font-size="12" font-weight="bold" fill="#1C1C1E">3/4回</text>
+  <rect x="30" y="330" width="333" height="8" rx="4" fill="#F5F5F5"/>
+  <rect x="30" y="330" width="250" height="8" rx="4" fill="#FF69B4"/>
+  <text x="30" y="355" font-family="Arial" font-size="11" fill="#FF69B4">あと1回で目標達成です！</text>
+  <line x1="30" y1="365" x2="363" y2="365" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="385" font-family="Arial" font-size="10" fill="#3A3A3C">前回来店</text>
+  <text x="30" y="400" font-family="Arial" font-size="12" fill="#1C1C1E">昨日 18:30</text>
+
+  <!-- Congestion Card -->
+  <rect x="16" y="430" width="361" height="120" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="455" font-family="Arial" font-size="12" fill="#3A3A3C">📍 渋谷店（お気に入り）</text>
+  <circle cx="40" cy="475" r="6" fill="#4CAF50"/>
+  <text x="55" y="480" font-family="Arial" font-size="16" font-weight="bold" fill="#1C1C1E">かなり空いています</text>
+  <text x="30" y="500" font-family="Arial" font-size="11" fill="#3A3A3C">現在の利用率: 25%</text>
+  <rect x="30" y="510" width="160" height="28" rx="14" fill="#FF69B4"/>
+  <text x="70" y="528" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">詳しく見る</text>
+  <rect x="200" y="510" width="160" height="28" rx="14" fill="none" stroke="#FF69B4" stroke-width="2"/>
+  <text x="235" y="528" font-family="Arial" font-size="12" font-weight="bold" fill="#FF69B4">今から行く</text>
+
+  <!-- Health Data Card -->
+  <rect x="16" y="565" width="361" height="180" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <rect x="16" y="565" width="120" height="40" fill="#FFFFFF"/>
+  <text x="60" y="590" font-family="Arial" font-size="13" font-weight="bold" fill="#FF69B4">体重</text>
+  <line x1="60" y1="595" x2="120" y2="595" stroke="#FF69B4" stroke-width="2"/>
+  <text x="150" y="590" font-family="Arial" font-size="13" fill="#3A3A3C">体脂肪</text>
+  <text x="235" y="590" font-family="Arial" font-size="13" fill="#3A3A3C">歩数</text>
+  <text x="30" y="640" font-family="Arial" font-size="28" font-weight="bold" fill="#1C1C1E">54.2 <tspan font-size="16" fill="#3A3A3C">kg</tspan></text>
+  <text x="30" y="665" font-family="Arial" font-size="13" fill="#4CAF50">↓ -0.3kg (前回比)</text>
+  <text x="30" y="695" font-family="Arial" font-size="13" fill="#4CAF50">順調に減っています✨</text>
+  <rect x="30" y="705" width="333" height="32" rx="16" fill="#FF69B4"/>
+  <text x="165" y="725" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">記録する</text>
+
+  <!-- Tab Bar -->
+  <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="820" font-family="Arial" font-size="10" fill="#FF69B4">🏠</text>
+  <text x="28" y="838" font-family="Arial" font-size="9" font-weight="bold" fill="#FF69B4">ホーム</text>
+  <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+  <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+  <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+  <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+  <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+  <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+  <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+  <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: ホーム画面 | 主要機能: ダッシュボード、チャレンジ、来店サマリー、混雑確認、健康データ</text>
+</svg>

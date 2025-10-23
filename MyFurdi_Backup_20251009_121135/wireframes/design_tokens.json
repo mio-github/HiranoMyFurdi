@@ -1,0 +1,559 @@
+{
+  "$schema": "https://design-tokens.org/schemas/design-tokens.schema.json",
+  "name": "MyFurdi Design Tokens",
+  "version": "1.0.0",
+  "colors": {
+    "primary": {
+      "pink": {
+        "value": "#FF69B4",
+        "type": "color",
+        "description": "FURDIブランドカラー - メインピンク"
+      },
+      "pink-light": {
+        "value": "#FFE4E1",
+        "type": "color",
+        "description": "FURDIブランドカラー - ライトピンク（背景用）"
+      },
+      "pink-dark": {
+        "value": "#FF1493",
+        "type": "color",
+        "description": "FURDIブランドカラー - ダークピンク（グラデーション用）"
+      }
+    },
+    "neutral": {
+      "white": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "背景・カード"
+      },
+      "gray-50": {
+        "value": "#F5F5F5",
+        "type": "color",
+        "description": "iOSグレー - 画面背景"
+      },
+      "gray-100": {
+        "value": "#E5E5E7",
+        "type": "color",
+        "description": "iOSグレー - ボーダー・ディバイダー"
+      },
+      "gray-500": {
+        "value": "#3A3A3C",
+        "type": "color",
+        "description": "iOSグレー - セカンダリテキスト"
+      },
+      "gray-900": {
+        "value": "#1C1C1E",
+        "type": "color",
+        "description": "iOSグレー - プライマリテキスト"
+      },
+      "black": {
+        "value": "#000000",
+        "type": "color",
+        "description": "ステータスバーテキスト"
+      }
+    },
+    "semantic": {
+      "success": {
+        "value": "#4CAF50",
+        "type": "color",
+        "description": "成功・達成・ポジティブ"
+      },
+      "error": {
+        "value": "#FF0000",
+        "type": "color",
+        "description": "エラー・警告"
+      },
+      "info": {
+        "value": "#2196F3",
+        "type": "color",
+        "description": "情報・リンク"
+      },
+      "warning": {
+        "value": "#FF9800",
+        "type": "color",
+        "description": "注意・警告"
+      }
+    },
+    "gradients": {
+      "primary": {
+        "value": "linear-gradient(135deg, #FF69B4 0%, #FF1493 100%)",
+        "type": "gradient",
+        "description": "プライマリグラデーション"
+      }
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": {
+        "value": "SF Pro Display, -apple-system, BlinkMacSystemFont, Inter, sans-serif",
+        "type": "fontFamily",
+        "description": "iOS標準フォント"
+      },
+      "secondary": {
+        "value": "SF Pro Text, -apple-system, BlinkMacSystemFont, Inter, sans-serif",
+        "type": "fontFamily",
+        "description": "本文用フォント"
+      },
+      "japanese": {
+        "value": "Hiragino Sans, Noto Sans JP, sans-serif",
+        "type": "fontFamily",
+        "description": "日本語フォント"
+      }
+    },
+    "fontSizes": {
+      "xs": {
+        "value": "9px",
+        "type": "dimension",
+        "description": "キャプション（タブラベル）"
+      },
+      "sm": {
+        "value": "11px",
+        "type": "dimension",
+        "description": "小サイズテキスト"
+      },
+      "base": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "基本テキストサイズ"
+      },
+      "md": {
+        "value": "13px",
+        "type": "dimension",
+        "description": "中サイズテキスト"
+      },
+      "lg": {
+        "value": "14px",
+        "type": "dimension",
+        "description": "大サイズテキスト"
+      },
+      "xl": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "サブヘッディング"
+      },
+      "2xl": {
+        "value": "18px",
+        "type": "dimension",
+        "description": "ヘッディング"
+      },
+      "3xl": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "大見出し"
+      },
+      "4xl": {
+        "value": "28px",
+        "type": "dimension",
+        "description": "数値表示（体重など）"
+      }
+    },
+    "fontWeights": {
+      "regular": {
+        "value": "400",
+        "type": "fontWeight"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeight"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "fontWeight"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeight"
+      }
+    },
+    "lineHeights": {
+      "tight": {
+        "value": "1.2",
+        "type": "number",
+        "description": "見出し用"
+      },
+      "normal": {
+        "value": "1.5",
+        "type": "number",
+        "description": "本文用"
+      },
+      "relaxed": {
+        "value": "1.75",
+        "type": "number",
+        "description": "余裕のある行間"
+      }
+    }
+  },
+  "spacing": {
+    "scale": {
+      "0": {
+        "value": "0px",
+        "type": "dimension"
+      },
+      "1": {
+        "value": "4px",
+        "type": "dimension"
+      },
+      "2": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "3": {
+        "value": "12px",
+        "type": "dimension"
+      },
+      "4": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "5": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "6": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "8": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "10": {
+        "value": "40px",
+        "type": "dimension"
+      },
+      "12": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "16": {
+        "value": "64px",
+        "type": "dimension"
+      }
+    },
+    "page": {
+      "margin": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "画面端のマージン"
+      },
+      "section-gap": {
+        "value": "15px",
+        "type": "dimension",
+        "description": "セクション間のギャップ"
+      }
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "sm": {
+      "value": "4px",
+      "type": "dimension"
+    },
+    "base": {
+      "value": "8px",
+      "type": "dimension",
+      "description": "カード・ボタン基本"
+    },
+    "lg": {
+      "value": "12px",
+      "type": "dimension",
+      "description": "大きなカード"
+    },
+    "xl": {
+      "value": "16px",
+      "type": "dimension",
+      "description": "特大カード"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "dimension",
+      "description": "円形・ピル型ボタン"
+    }
+  },
+  "shadows": {
+    "sm": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "type": "shadow",
+      "description": "軽いシャドウ"
+    },
+    "base": {
+      "value": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "type": "shadow",
+      "description": "カード標準シャドウ"
+    },
+    "md": {
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "type": "shadow",
+      "description": "中程度のシャドウ"
+    },
+    "lg": {
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "type": "shadow",
+      "description": "大きなシャドウ"
+    }
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": {
+          "value": "{colors.primary.pink}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{colors.neutral.white}",
+          "type": "color"
+        },
+        "borderRadius": {
+          "value": "{borderRadius.full}",
+          "type": "dimension"
+        },
+        "paddingVertical": {
+          "value": "12px",
+          "type": "dimension"
+        },
+        "paddingHorizontal": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "fontSize": {
+          "value": "{typography.fontSizes.md}",
+          "type": "dimension"
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeights.bold}",
+          "type": "fontWeight"
+        }
+      },
+      "secondary": {
+        "background": {
+          "value": "{colors.neutral.white}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{colors.primary.pink}",
+          "type": "color"
+        },
+        "border": {
+          "value": "2px solid {colors.primary.pink}",
+          "type": "border"
+        },
+        "borderRadius": {
+          "value": "{borderRadius.full}",
+          "type": "dimension"
+        },
+        "paddingVertical": {
+          "value": "12px",
+          "type": "dimension"
+        },
+        "paddingHorizontal": {
+          "value": "24px",
+          "type": "dimension"
+        }
+      }
+    },
+    "card": {
+      "default": {
+        "background": {
+          "value": "{colors.neutral.white}",
+          "type": "color"
+        },
+        "border": {
+          "value": "1px solid {colors.neutral.gray-100}",
+          "type": "border"
+        },
+        "borderRadius": {
+          "value": "{borderRadius.lg}",
+          "type": "dimension"
+        },
+        "padding": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "shadow": {
+          "value": "{shadows.base}",
+          "type": "shadow"
+        }
+      },
+      "elevated": {
+        "background": {
+          "value": "{colors.neutral.white}",
+          "type": "color"
+        },
+        "borderRadius": {
+          "value": "{borderRadius.lg}",
+          "type": "dimension"
+        },
+        "padding": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "shadow": {
+          "value": "{shadows.lg}",
+          "type": "shadow"
+        }
+      }
+    },
+    "tabBar": {
+      "height": {
+        "value": "60px",
+        "type": "dimension"
+      },
+      "background": {
+        "value": "{colors.neutral.white}",
+        "type": "color"
+      },
+      "borderTop": {
+        "value": "1px solid {colors.neutral.gray-100}",
+        "type": "border"
+      },
+      "iconSize": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "labelSize": {
+        "value": "{typography.fontSizes.xs}",
+        "type": "dimension"
+      },
+      "activeColor": {
+        "value": "{colors.primary.pink}",
+        "type": "color"
+      },
+      "inactiveColor": {
+        "value": "{colors.neutral.gray-500}",
+        "type": "color"
+      }
+    },
+    "statusBar": {
+      "height": {
+        "value": "44px",
+        "type": "dimension"
+      },
+      "background": {
+        "value": "{colors.neutral.white}",
+        "type": "color"
+      },
+      "textColor": {
+        "value": "{colors.neutral.black}",
+        "type": "color"
+      },
+      "fontSize": {
+        "value": "14px",
+        "type": "dimension"
+      }
+    },
+    "header": {
+      "height": {
+        "value": "60px",
+        "type": "dimension"
+      },
+      "background": {
+        "value": "{colors.neutral.white}",
+        "type": "color"
+      },
+      "titleSize": {
+        "value": "{typography.fontSizes.2xl}",
+        "type": "dimension"
+      },
+      "titleWeight": {
+        "value": "{typography.fontWeights.bold}",
+        "type": "fontWeight"
+      },
+      "titleColor": {
+        "value": "{colors.neutral.gray-900}",
+        "type": "color"
+      }
+    }
+  },
+  "layout": {
+    "screen": {
+      "width": {
+        "value": "393px",
+        "type": "dimension",
+        "description": "iPhone 14 Pro画面幅"
+      },
+      "height": {
+        "value": "852px",
+        "type": "dimension",
+        "description": "iPhone 14 Pro画面高"
+      }
+    },
+    "safeArea": {
+      "top": {
+        "value": "44px",
+        "type": "dimension",
+        "description": "ステータスバー高さ"
+      },
+      "bottom": {
+        "value": "60px",
+        "type": "dimension",
+        "description": "タブバー高さ"
+      }
+    },
+    "contentArea": {
+      "height": {
+        "value": "688px",
+        "type": "dimension",
+        "description": "コンテンツ領域（852 - 44 - 60 - 60）"
+      }
+    },
+    "grid": {
+      "columns": {
+        "value": "12",
+        "type": "number"
+      },
+      "gutter": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "margin": {
+        "value": "16px",
+        "type": "dimension"
+      }
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": {
+        "value": "150ms",
+        "type": "duration"
+      },
+      "base": {
+        "value": "250ms",
+        "type": "duration"
+      },
+      "slow": {
+        "value": "300ms",
+        "type": "duration"
+      }
+    },
+    "easing": {
+      "ease-in": {
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "type": "cubicBezier"
+      },
+      "ease-out": {
+        "value": "cubic-bezier(0, 0, 0.2, 1)",
+        "type": "cubicBezier"
+      },
+      "ease-in-out": {
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "type": "cubicBezier"
+      }
+    }
+  },
+  "accessibility": {
+    "minTouchTarget": {
+      "value": "44px",
+      "type": "dimension",
+      "description": "iOS最小タッチターゲットサイズ"
+    },
+    "minContrastRatio": {
+      "value": "4.5",
+      "type": "number",
+      "description": "WCAG AA基準"
+    }
+  }
+}

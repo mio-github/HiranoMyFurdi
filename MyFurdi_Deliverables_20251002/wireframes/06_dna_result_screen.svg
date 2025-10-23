@@ -1,0 +1,110 @@
+<svg width="393" height="852" viewBox="0 0 393 852" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Frame -->
+  <rect width="393" height="852" fill="#F5F5F5"/>
+
+  <!-- Status Bar -->
+  <rect width="393" height="44" fill="#FFFFFF"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#000">9:41</text>
+
+  <!-- Header -->
+  <rect y="44" width="393" height="60" fill="#FFFFFF"/>
+  <text x="20" y="80" font-family="Arial" font-size="16" fill="#3A3A3C">‹</text>
+  <text x="150" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#1C1C1E">DNA検査結果</text>
+
+  <!-- Test Info Card -->
+  <rect x="16" y="120" width="361" height="60" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="30" y="145" font-family="Arial" font-size="12" fill="#1C1C1E">検査日: 2024年8月15日</text>
+  <text x="30" y="165" font-family="Arial" font-size="13" font-weight="bold" fill="#2196F3">検査機関: GeneQuest</text>
+  <circle cx="350" cy="150" r="16" fill="#2196F3" opacity="0.2"/>
+  <text x="345" y="156" font-family="Arial" font-size="16" fill="#2196F3">🧬</text>
+
+  <!-- Tabs -->
+  <rect y="195" width="393" height="50" fill="#FFFFFF"/>
+  <line x1="0" y1="195" x2="393" y2="195" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="25" y="225" font-family="Arial" font-size="13" font-weight="bold" fill="#2196F3">総合</text>
+  <line x1="20" y1="243" x2="55" y2="243" stroke="#2196F3" stroke-width="2"/>
+  <text x="85" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">筋肉</text>
+  <text x="145" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">代謝</text>
+  <text x="205" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">リスク</text>
+  <text x="270" y="225" font-family="Arial" font-size="13" fill="#3A3A3C">詳細</text>
+
+  <!-- Radar Chart Card -->
+  <rect x="16" y="260" width="361" height="240" rx="12" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="30" y="285" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1E">体質スコア</text>
+
+  <!-- Simplified Radar Chart -->
+  <g transform="translate(196.5, 395)">
+    <!-- Background circles -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#E5E5E7" stroke-width="1"/>
+    <line x1="0" y1="0" x2="69" y2="-40" stroke="#E5E5E7" stroke-width="1"/>
+    <line x1="0" y1="0" x2="69" y2="40" stroke="#E5E5E7" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#E5E5E7" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-69" y2="40" stroke="#E5E5E7" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-69" y2="-40" stroke="#E5E5E7" stroke-width="1"/>
+
+    <!-- Data polygon -->
+    <polygon points="0,-64 55,-32 48,32 0,56 -48,32 -55,-32" fill="#2196F3" fill-opacity="0.3" stroke="#2196F3" stroke-width="2"/>
+
+    <!-- Labels -->
+    <text x="-15" y="-90" font-family="Arial" font-size="10" fill="#3A3A3C">筋力</text>
+    <text x="75" y="-35" font-family="Arial" font-size="10" fill="#3A3A3C">持久力</text>
+    <text x="75" y="45" font-family="Arial" font-size="10" fill="#3A3A3C">代謝</text>
+    <text x="-15" y="95" font-family="Arial" font-size="10" fill="#3A3A3C">回復</text>
+    <text x="-90" y="45" font-family="Arial" font-size="10" fill="#3A3A3C">柔軟性</text>
+    <text x="-90" y="-35" font-family="Arial" font-size="10" fill="#3A3A3C">総合</text>
+  </g>
+
+  <!-- Body Type Card -->
+  <rect x="16" y="515" width="361" height="100" rx="12" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <circle cx="45" cy="555" r="20" fill="#2196F3" opacity="0.2"/>
+  <text x="38" y="562" font-family="Arial" font-size="20" fill="#2196F3">💪</text>
+  <text x="75" y="545" font-family="Arial" font-size="13" font-weight="bold" fill="#1C1C1E">あなたの体質タイプ</text>
+  <text x="75" y="570" font-family="Arial" font-size="16" font-weight="bold" fill="#2196F3">持久力優位型</text>
+  <text x="75" y="590" font-family="Arial" font-size="11" fill="#3A3A3C">遺伝的に長時間の運動に向いています</text>
+  <text x="300" y="565" font-family="Arial" font-size="28" fill="#2196F3">★★★★☆</text>
+
+  <!-- Gene Cards -->
+  <rect x="16" y="630" width="175" height="100" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="26" y="650" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">ACTN3遺伝子</text>
+  <text x="26" y="665" font-family="Arial" font-size="9" fill="#3A3A3C">(筋肉タイプ)</text>
+  <rect x="26" y="675" width="50" height="20" rx="10" fill="#E8F5E9"/>
+  <text x="38" y="689" font-family="Arial" font-size="11" font-weight="bold" fill="#4CAF50">XX型</text>
+  <text x="26" y="710" font-family="Arial" font-size="10" fill="#3A3A3C">持久力に優れる</text>
+
+  <rect x="202" y="630" width="175" height="100" rx="8" fill="#FFFFFF" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="212" y="650" font-family="Arial" font-size="11" font-weight="bold" fill="#3A3A3C">ACE遺伝子</text>
+  <text x="212" y="665" font-family="Arial" font-size="9" fill="#3A3A3C">(持久力)</text>
+  <rect x="212" y="675" width="45" height="20" rx="10" fill="#E3F2FD"/>
+  <text x="222" y="689" font-family="Arial" font-size="11" font-weight="bold" fill="#2196F3">II型</text>
+  <text x="212" y="710" font-family="Arial" font-size="10" fill="#3A3A3C">持久力が高い</text>
+
+  <!-- Recommendation Card -->
+  <rect x="16" y="745" width="361" height="90" rx="12" fill="#FFF3E0"/>
+  <text x="30" y="765" font-family="Arial" font-size="12" font-weight="bold" fill="#FF9800">💡 あなたにおすすめ</text>
+  <text x="30" y="785" font-family="Arial" font-size="11" fill="#1C1C1E">• 有酸素運動を中心に</text>
+  <text x="30" y="800" font-family="Arial" font-size="11" fill="#1C1C1E">• 長時間の低〜中強度トレーニング</text>
+  <text x="30" y="815" font-family="Arial" font-size="11" fill="#1C1C1E">• マラソン・サイクリング・水泳</text>
+
+  <!-- Tab Bar -->
+  <rect y="792" width="393" height="60" fill="#FFFFFF"/>
+  <line x1="0" y1="792" x2="393" y2="792" stroke="#E5E5E7" stroke-width="1"/>
+  <text x="35" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏠</text>
+  <text x="28" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">ホーム</text>
+  <text x="112" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">📊</text>
+  <text x="100" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">レポート</text>
+  <text x="189" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🎫</text>
+  <text x="180" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">入館証</text>
+  <text x="262" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">🏆</text>
+  <text x="250" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">リワード</text>
+  <text x="338" y="820" font-family="Arial" font-size="10" fill="#3A3A3C">⚙️</text>
+  <text x="330" y="838" font-family="Arial" font-size="9" fill="#3A3A3C">メニュー</text>
+
+  <!-- Annotations -->
+  <text x="10" y="870" font-family="Arial" font-size="10" fill="#666">画面名: DNA検査結果画面 | 主要機能: 遺伝子検査結果表示、体質分析、トレーニング推奨</text>
+</svg>

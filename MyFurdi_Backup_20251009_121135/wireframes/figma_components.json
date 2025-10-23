@@ -1,0 +1,669 @@
+{
+  "name": "MyFurdi Component Library",
+  "version": "1.0.0",
+  "components": {
+    "navigation": {
+      "TabBar": {
+        "description": "アプリ下部のメインナビゲーション",
+        "dimensions": {
+          "width": "393px",
+          "height": "60px"
+        },
+        "properties": {
+          "background": "#FFFFFF",
+          "borderTop": "1px solid #E5E5E7"
+        },
+        "items": [
+          {
+            "id": "home",
+            "icon": "🏠",
+            "label": "ホーム",
+            "activeColor": "#FF69B4",
+            "inactiveColor": "#3A3A3C"
+          },
+          {
+            "id": "report",
+            "icon": "📊",
+            "label": "レポート",
+            "activeColor": "#FF69B4",
+            "inactiveColor": "#3A3A3C"
+          },
+          {
+            "id": "qrcode",
+            "icon": "🎫",
+            "label": "入館証",
+            "activeColor": "#FF69B4",
+            "inactiveColor": "#3A3A3C"
+          },
+          {
+            "id": "reward",
+            "icon": "🏆",
+            "label": "リワード",
+            "activeColor": "#FF69B4",
+            "inactiveColor": "#3A3A3C"
+          },
+          {
+            "id": "menu",
+            "icon": "⚙️",
+            "label": "メニュー",
+            "activeColor": "#FF69B4",
+            "inactiveColor": "#3A3A3C"
+          }
+        ],
+        "variants": [
+          {
+            "name": "selected",
+            "values": ["home", "report", "qrcode", "reward", "menu"]
+          }
+        ]
+      },
+      "StatusBar": {
+        "description": "iOS標準ステータスバー",
+        "dimensions": {
+          "width": "393px",
+          "height": "44px"
+        },
+        "properties": {
+          "background": "#FFFFFF",
+          "textColor": "#000000",
+          "fontSize": "14px"
+        },
+        "elements": [
+          {
+            "type": "time",
+            "position": "left",
+            "x": "20px"
+          },
+          {
+            "type": "icons",
+            "position": "right",
+            "x": "350px",
+            "icons": ["cellular", "wifi", "battery"]
+          }
+        ]
+      },
+      "Header": {
+        "description": "画面上部のヘッダー",
+        "dimensions": {
+          "width": "393px",
+          "height": "60px"
+        },
+        "properties": {
+          "background": "#FFFFFF",
+          "titleSize": "18px",
+          "titleWeight": "bold",
+          "titleColor": "#1C1C1E"
+        },
+        "variants": [
+          {
+            "name": "withBackButton",
+            "hasBackButton": true
+          },
+          {
+            "name": "withAction",
+            "hasActionButton": true
+          }
+        ]
+      }
+    },
+    "cards": {
+      "BasicCard": {
+        "description": "基本カードコンポーネント",
+        "properties": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E5E5E7",
+          "borderRadius": "12px",
+          "padding": "16px"
+        },
+        "variants": [
+          {
+            "name": "size",
+            "values": ["small", "medium", "large"]
+          },
+          {
+            "name": "elevated",
+            "hasShadow": true,
+            "shadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+          }
+        ]
+      },
+      "GradientCard": {
+        "description": "グラデーション背景カード（ユーザープロフィール等）",
+        "properties": {
+          "background": "linear-gradient(135deg, #FF69B4 0%, #FF1493 100%)",
+          "borderRadius": "16px",
+          "padding": "20px",
+          "textColor": "#FFFFFF"
+        },
+        "elements": [
+          {
+            "type": "avatar",
+            "size": "50px",
+            "background": "#FFFFFF"
+          },
+          {
+            "type": "stats",
+            "layout": "horizontal",
+            "items": 3
+          }
+        ]
+      },
+      "ChallengeCard": {
+        "description": "チャレンジ・タスクカード",
+        "properties": {
+          "background": "#FFE4E1",
+          "borderRadius": "8px",
+          "padding": "12px"
+        },
+        "states": [
+          {
+            "name": "completed",
+            "background": "#E8F5E9",
+            "border": "1px solid #4CAF50",
+            "icon": "✓",
+            "iconColor": "#4CAF50"
+          },
+          {
+            "name": "pending",
+            "background": "#FFFFFF",
+            "border": "1px solid #E5E5E7",
+            "icon": "○",
+            "iconColor": "#3A3A3C"
+          }
+        ]
+      },
+      "InfoCard": {
+        "description": "情報表示カード（来店サマリー等）",
+        "properties": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E5E5E7",
+          "borderRadius": "12px",
+          "padding": "16px"
+        },
+        "elements": [
+          {
+            "type": "title",
+            "fontSize": "20px",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "progressBar",
+            "height": "8px",
+            "borderRadius": "4px",
+            "backgroundColor": "#F5F5F5",
+            "fillColor": "#FF69B4"
+          },
+          {
+            "type": "caption",
+            "fontSize": "11px",
+            "color": "#FF69B4"
+          }
+        ]
+      }
+    },
+    "buttons": {
+      "PrimaryButton": {
+        "description": "プライマリボタン",
+        "properties": {
+          "background": "#FF69B4",
+          "textColor": "#FFFFFF",
+          "borderRadius": "16px",
+          "paddingVertical": "12px",
+          "paddingHorizontal": "24px",
+          "fontSize": "13px",
+          "fontWeight": "bold"
+        },
+        "variants": [
+          {
+            "name": "size",
+            "values": [
+              {
+                "name": "large",
+                "height": "48px"
+              },
+              {
+                "name": "medium",
+                "height": "40px"
+              },
+              {
+                "name": "small",
+                "height": "32px"
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "values": [
+              {
+                "name": "default",
+                "opacity": 1
+              },
+              {
+                "name": "pressed",
+                "opacity": 0.8
+              },
+              {
+                "name": "disabled",
+                "opacity": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "SecondaryButton": {
+        "description": "セカンダリボタン",
+        "properties": {
+          "background": "#FFFFFF",
+          "textColor": "#FF69B4",
+          "border": "2px solid #FF69B4",
+          "borderRadius": "16px",
+          "paddingVertical": "12px",
+          "paddingHorizontal": "24px",
+          "fontSize": "13px",
+          "fontWeight": "bold"
+        }
+      },
+      "IconButton": {
+        "description": "アイコンのみボタン",
+        "properties": {
+          "size": "44px",
+          "borderRadius": "22px",
+          "background": "transparent"
+        },
+        "variants": [
+          {
+            "name": "withBackground",
+            "background": "#F5F5F5"
+          }
+        ]
+      }
+    },
+    "inputs": {
+      "ProgressBar": {
+        "description": "進捗バー",
+        "properties": {
+          "height": "8px",
+          "borderRadius": "4px",
+          "backgroundColor": "#F5F5F5",
+          "fillColor": "#FF69B4"
+        },
+        "variants": [
+          {
+            "name": "size",
+            "values": ["small (6px)", "medium (8px)", "large (12px)"]
+          }
+        ]
+      },
+      "Badge": {
+        "description": "通知バッジ",
+        "properties": {
+          "background": "#FF0000",
+          "textColor": "#FFFFFF",
+          "fontSize": "11px",
+          "fontWeight": "bold",
+          "borderRadius": "9px",
+          "minWidth": "18px",
+          "height": "18px",
+          "padding": "0 6px"
+        }
+      },
+      "Tab": {
+        "description": "タブコンポーネント",
+        "properties": {
+          "fontSize": "13px",
+          "fontWeight": "regular",
+          "paddingVertical": "12px",
+          "paddingHorizontal": "16px"
+        },
+        "states": [
+          {
+            "name": "active",
+            "fontWeight": "bold",
+            "color": "#FF69B4",
+            "underline": "2px solid #FF69B4"
+          },
+          {
+            "name": "inactive",
+            "fontWeight": "regular",
+            "color": "#3A3A3C"
+          }
+        ]
+      },
+      "FilterChip": {
+        "description": "フィルターチップ（期間選択等）",
+        "properties": {
+          "borderRadius": "14px",
+          "paddingVertical": "6px",
+          "paddingHorizontal": "16px",
+          "fontSize": "11px"
+        },
+        "states": [
+          {
+            "name": "selected",
+            "background": "#FF69B4",
+            "textColor": "#FFFFFF",
+            "fontWeight": "bold"
+          },
+          {
+            "name": "unselected",
+            "background": "#FFFFFF",
+            "textColor": "#1C1C1E",
+            "border": "1px solid #E5E5E7"
+          }
+        ]
+      }
+    },
+    "lists": {
+      "ListItem": {
+        "description": "リストアイテム",
+        "properties": {
+          "height": "60px",
+          "paddingVertical": "12px",
+          "paddingHorizontal": "16px",
+          "background": "#FFFFFF",
+          "divider": "1px solid #E5E5E7"
+        },
+        "elements": [
+          {
+            "type": "icon",
+            "size": "30px",
+            "borderRadius": "15px",
+            "background": "#FFE4E1"
+          },
+          {
+            "type": "title",
+            "fontSize": "13px",
+            "fontWeight": "bold",
+            "color": "#1C1C1E"
+          },
+          {
+            "type": "subtitle",
+            "fontSize": "11px",
+            "color": "#3A3A3C"
+          },
+          {
+            "type": "chevron",
+            "fontSize": "16px",
+            "color": "#3A3A3C"
+          }
+        ]
+      },
+      "ExerciseListItem": {
+        "description": "運動記録リストアイテム",
+        "properties": {
+          "height": "80px",
+          "padding": "12px",
+          "background": "#FFFFFF",
+          "divider": "1px solid #E5E5E7"
+        },
+        "elements": [
+          {
+            "type": "title",
+            "fontSize": "13px",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "timestamp",
+            "fontSize": "11px",
+            "color": "#3A3A3C",
+            "position": "top-right"
+          },
+          {
+            "type": "metrics",
+            "fontSize": "11px",
+            "color": "#3A3A3C"
+          }
+        ]
+      }
+    },
+    "data": {
+      "BarChart": {
+        "description": "棒グラフ",
+        "properties": {
+          "barColor": "#FF69B4",
+          "barRadius": "4px",
+          "axisColor": "#E5E5E7",
+          "labelSize": "10px",
+          "labelColor": "#3A3A3C"
+        },
+        "dimensions": {
+          "height": "200px",
+          "barWidth": "40px",
+          "barSpacing": "10px"
+        }
+      },
+      "StatCard": {
+        "description": "統計カード",
+        "properties": {
+          "background": "#F5F5F5",
+          "borderRadius": "8px",
+          "padding": "12px",
+          "width": "160px",
+          "height": "50px"
+        },
+        "elements": [
+          {
+            "type": "label",
+            "fontSize": "10px",
+            "color": "#3A3A3C"
+          },
+          {
+            "type": "value",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "color": "#1C1C1E"
+          },
+          {
+            "type": "unit",
+            "fontSize": "12px",
+            "color": "#3A3A3C"
+          }
+        ]
+      },
+      "QRCode": {
+        "description": "QRコード表示",
+        "properties": {
+          "size": "223px",
+          "background": "#FFFFFF",
+          "border": "4px solid #F5F5F5",
+          "borderRadius": "8px",
+          "containerBorderRadius": "16px",
+          "containerBorder": "2px solid #E5E5E7"
+        },
+        "autoRefresh": {
+          "interval": "30s",
+          "indicator": "green dot"
+        }
+      }
+    },
+    "feedback": {
+      "TipsCard": {
+        "description": "ヒント・情報カード",
+        "properties": {
+          "background": "#FFE4E1",
+          "borderRadius": "8px",
+          "padding": "16px"
+        },
+        "elements": [
+          {
+            "type": "icon",
+            "emoji": "💡",
+            "size": "16px"
+          },
+          {
+            "type": "title",
+            "fontSize": "11px",
+            "fontWeight": "bold",
+            "color": "#FF69B4"
+          },
+          {
+            "type": "description",
+            "fontSize": "10px",
+            "color": "#1C1C1E"
+          }
+        ]
+      },
+      "BonusCard": {
+        "description": "ボーナス・特典カード",
+        "properties": {
+          "background": "linear-gradient(90deg, #FF69B4 0%, #FF1493 100%)",
+          "borderRadius": "8px",
+          "padding": "16px"
+        },
+        "elements": [
+          {
+            "type": "icon",
+            "emoji": "🎁",
+            "size": "20px"
+          },
+          {
+            "type": "title",
+            "fontSize": "13px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF"
+          },
+          {
+            "type": "description",
+            "fontSize": "11px",
+            "color": "#FFFFFF",
+            "opacity": 0.9
+          }
+        ]
+      },
+      "StatusIndicator": {
+        "description": "ステータスインジケーター（混雑状況等）",
+        "properties": {
+          "size": "12px",
+          "borderRadius": "6px"
+        },
+        "states": [
+          {
+            "name": "available",
+            "color": "#4CAF50",
+            "label": "空いています"
+          },
+          {
+            "name": "moderate",
+            "color": "#FF9800",
+            "label": "やや混雑"
+          },
+          {
+            "name": "busy",
+            "color": "#FF0000",
+            "label": "混雑中"
+          }
+        ]
+      }
+    }
+  },
+  "layouts": {
+    "screens": {
+      "HomeScreen": {
+        "structure": [
+          "StatusBar (44px)",
+          "Header (60px)",
+          "Content Area (688px)",
+          "  - Challenge Card (140px)",
+          "  - Gap (15px)",
+          "  - Visit Summary Card (140px)",
+          "  - Gap (15px)",
+          "  - Congestion Card (120px)",
+          "  - Gap (15px)",
+          "  - Health Data Card (180px)",
+          "TabBar (60px)"
+        ]
+      },
+      "ReportScreen": {
+        "structure": [
+          "StatusBar (44px)",
+          "Header (60px)",
+          "Tab Filter (50px)",
+          "Content Area (638px)",
+          "  - Chart Card (220px)",
+          "  - Gap (15px)",
+          "  - Summary Card (100px)",
+          "  - Gap (15px)",
+          "  - Exercise List (180px)",
+          "TabBar (60px)"
+        ]
+      },
+      "QRCodeScreen": {
+        "structure": [
+          "StatusBar (44px)",
+          "Header (60px)",
+          "Content Area (688px)",
+          "  - Gap (46px)",
+          "  - QR Code Display (263px)",
+          "  - Gap (27px)",
+          "  - Info Cards (170px)",
+          "  - Store Selection (60px)",
+          "  - Usage Guide Link (35px)",
+          "  - Auto-update Notice (35px)",
+          "  - Tips Card (60px)",
+          "TabBar (60px)"
+        ]
+      },
+      "RewardScreen": {
+        "structure": [
+          "StatusBar (44px)",
+          "Header (60px)",
+          "Tab Filter (50px)",
+          "Content Area (638px)",
+          "  - Challenge Card (380px)",
+          "  - Bonus Card (60px)",
+          "  - Progress Card (100px)",
+          "TabBar (60px)"
+        ]
+      },
+      "MenuScreen": {
+        "structure": [
+          "StatusBar (44px)",
+          "Header (60px)",
+          "Content Area (688px)",
+          "  - Profile Card (140px)",
+          "  - Gap (15px)",
+          "  - Usage Guide Section (235px)",
+          "  - Gap (15px)",
+          "  - Content Section (175px)",
+          "  - Gap (15px)",
+          "  - Settings Section (90px)",
+          "TabBar (60px)"
+        ]
+      }
+    }
+  },
+  "designPatterns": {
+    "navigation": {
+      "tabBarTransition": {
+        "type": "instant",
+        "description": "タブ間の切り替えは即座に"
+      },
+      "pushTransition": {
+        "type": "slide",
+        "direction": "right-to-left",
+        "duration": "300ms",
+        "easing": "ease-out"
+      },
+      "modalTransition": {
+        "type": "slide",
+        "direction": "bottom-to-top",
+        "duration": "250ms",
+        "easing": "ease-out"
+      }
+    },
+    "feedback": {
+      "buttonPress": {
+        "haptic": "light",
+        "visual": "opacity 0.8"
+      },
+      "cardTap": {
+        "haptic": "selection",
+        "visual": "scale 0.98"
+      },
+      "tabSwitch": {
+        "haptic": "selection",
+        "visual": "color change + underline"
+      }
+    }
+  }
+}
