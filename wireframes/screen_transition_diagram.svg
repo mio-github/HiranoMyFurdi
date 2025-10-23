@@ -190,9 +190,9 @@
     <text x="28" y="165" font-family="Arial" font-size="10" fill="#1C1C1E">動画トレーニング</text>
 
     <circle cx="15" cy="185" r="5" fill="#E8F5E9"/>
-    <text x="28" y="190" font-family="Arial" font-size="10" fill="#4CAF50">DNA結果</text>
-    <rect x="85" y="178" width="52" height="14" rx="7" fill="#4CAF50"/>
-    <text x="111" y="188" font-family="Arial" font-size="8" font-weight="bold" fill="#FFFFFF">Phase2</text>
+    <text x="28" y="190" font-family="Arial" font-size="10" fill="#4CAF50">IDENSIL結果</text>
+    <rect x="92" y="178" width="52" height="14" rx="7" fill="#4CAF50"/>
+    <text x="118" y="188" font-family="Arial" font-size="8" font-weight="bold" fill="#FFFFFF">Phase2</text>
 
     <circle cx="15" cy="210" r="5" fill="#FFE4E1"/>
     <text x="28" y="215" font-family="Arial" font-size="10" fill="#1C1C1E">ログアウト</text>
@@ -213,7 +213,7 @@
     <text x="28" y="90" font-family="Arial" font-size="10" fill="#1C1C1E">タニタ連携</text>
 
     <circle cx="15" cy="110" r="5" fill="#FFE4E1"/>
-    <text x="28" y="115" font-family="Arial" font-size="10" fill="#1C1C1E">DNA検査連携</text>
+    <text x="28" y="115" font-family="Arial" font-size="10" fill="#1C1C1E">IDENSIL DNA連携</text>
 
     <circle cx="15" cy="135" r="5" fill="#FFE4E1"/>
     <text x="28" y="140" font-family="Arial" font-size="10" fill="#1C1C1E">自動同期設定</text>
@@ -241,14 +241,14 @@
 
   <!-- DNA Result Screen (Bottom Center - Phase2 予算内) -->
   <g id="dna-screen" transform="translate(450, 650)">
-    <rect x="0" y="250" width="180" height="220" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="3" stroke-dasharray="8,4"/>
-    <rect x="0" y="250" width="180" height="40" rx="12" fill="#4CAF50"/>
-    <rect x="115" y="258" width="58" height="18" rx="9" fill="#FFFFFF"/>
-    <text x="144" y="272" font-family="Arial" font-size="9" font-weight="bold" fill="#4CAF50">Phase2</text>
-    <text x="90" y="277" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🧬 DNA結果</text>
+    <rect x="0" y="250" width="200" height="240" rx="12" fill="#E8F5E9" stroke="#4CAF50" stroke-width="3" stroke-dasharray="8,4"/>
+    <rect x="0" y="250" width="200" height="40" rx="12" fill="#4CAF50"/>
+    <rect x="125" y="258" width="58" height="18" rx="9" fill="#FFFFFF"/>
+    <text x="154" y="272" font-family="Arial" font-size="9" font-weight="bold" fill="#4CAF50">Phase2</text>
+    <text x="100" y="277" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🧬 IDENSIL結果</text>
 
     <circle cx="15" cy="310" r="5" fill="#E8F5E9"/>
-    <text x="28" y="315" font-family="Arial" font-size="10" fill="#1C1C1E">総合評価</text>
+    <text x="28" y="315" font-family="Arial" font-size="10" fill="#1C1C1E">総合評価(32項目)</text>
 
     <circle cx="15" cy="335" r="5" fill="#E8F5E9"/>
     <text x="28" y="340" font-family="Arial" font-size="10" fill="#1C1C1E">筋肉タイプ</text>
@@ -263,9 +263,12 @@
     <text x="28" y="415" font-family="Arial" font-size="10" fill="#1C1C1E">詳細データ</text>
 
     <circle cx="15" cy="435" r="5" fill="#E8F5E9"/>
-    <text x="28" y="440" font-family="Arial" font-size="10" fill="#1C1C1E">AIアドバイス</text>
+    <text x="28" y="440" font-family="Arial" font-size="10" fill="#1C1C1E">PDFダウンロード</text>
 
-    <text x="90" y="460" font-family="Arial" font-size="9" fill="#4CAF50" font-weight="bold" text-anchor="middle">Phase2（予算内）</text>
+    <circle cx="15" cy="460" r="5" fill="#E8F5E9"/>
+    <text x="28" y="465" font-family="Arial" font-size="10" fill="#1C1C1E">AIアドバイス</text>
+
+    <text x="100" y="480" font-family="Arial" font-size="9" fill="#4CAF50" font-weight="bold" text-anchor="middle">Phase2（予算内）</text>
   </g>
 
 <!-- Login to Home transition (Clear downward arrow) -->
@@ -295,9 +298,9 @@
   <text x="920" y="920" font-family="Arial" font-size="10" fill="#4CAF50">壁紙選択</text>
 
   <!-- Menu to DNA Result (Phase2 予算内) -->
-  <path d="M 1020,780 Q 750,850 630,900" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowGreen)"/>
-  <rect x="795" y="826" width="70" height="20" rx="10" fill="#4CAF50"/>
-  <text x="830" y="841" font-family="Arial" font-size="10" fill="#FFFFFF" font-weight="bold" text-anchor="middle">DNA結果</text>
+  <path d="M 1020,780 Q 750,850 650,900" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowGreen)"/>
+  <rect x="795" y="826" width="88" height="20" rx="10" fill="#4CAF50"/>
+  <text x="839" y="841" font-family="Arial" font-size="10" fill="#FFFFFF" font-weight="bold" text-anchor="middle">IDENSIL結果</text>
 
 <!-- Action Transitions (Green dashed arrows) -->
   <!-- Home challenge to Reward -->
