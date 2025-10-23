@@ -7,12 +7,28 @@ interface DNAResultScreenProps {
 
 const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
   const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
 
   const handleLineConsultation = () => {
+    setToastMessage('LINEアプリに移動します。アプリに戻るには再度開いてください。');
     setShowToast(true);
     setTimeout(() => setShowToast(false), 3000);
     // In real app, this would open LINE app
     window.open('https://line.me/R/', '_blank');
+  };
+
+  const handlePDFDownload = (reportType: 'idensil' | 'training') => {
+    const fileName = reportType === 'idensil'
+      ? 'IDENSIL_DNA_Report_12345_20240815.pdf'
+      : 'Training_Menu_12345_20240815.pdf';
+
+    setToastMessage(`${fileName} をダウンロードしています...`);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
+
+    // In real app, this would download PDF from server
+    // GET /api/dna/pdf/:userId (方式A: IDENSIL API or 方式B: 新PIX)
+    console.log(`Downloading ${reportType} PDF...`);
   };
 
   return (
@@ -35,19 +51,20 @@ const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
       {/* Content */}
       <div className="px-4 pb-20">
         {/* Test Info Card */}
-        <div className="mt-4 p-4 rounded-xl bg-blue-50 border border-blue-200 relative overflow-hidden">
+        <div className="mt-4 p-4 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 relative overflow-hidden">
           <div className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-blue-200 bg-opacity-40 rounded-full flex items-center justify-center">
             <span className="text-2xl">🧬</span>
           </div>
           <p className="text-xs text-gray-700 mb-1">検査日: 2024年8月15日</p>
-          <p className="text-sm font-semibold text-blue-600">検査機関: GeneQuest</p>
+          <p className="text-sm font-semibold text-blue-600">検査機関: IDENSIL（イデンシル）</p>
+          <p className="text-xs text-gray-600 mt-1">32項目の高精度遺伝子分析</p>
         </div>
 
         {/* PDF Viewer Section - Gene Test Results */}
         <div className="mt-4 bg-white rounded-xl border border-ios-separator overflow-hidden">
           <div className="p-4 border-b border-ios-separator">
-            <h3 className="text-sm font-semibold text-ios-text mb-1">遺伝子検査結果レポート</h3>
-            <p className="text-xs text-gray-500">21項目の詳細な検査結果</p>
+            <h3 className="text-sm font-semibold text-ios-text mb-1">IDENSIL 遺伝子検査結果レポート</h3>
+            <p className="text-xs text-gray-500">32項目の詳細な検査結果</p>
           </div>
 
           {/* PDF Preview */}
@@ -57,8 +74,8 @@ const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-3xl">📄</span>
                 </div>
-                <h4 className="text-sm font-semibold mb-2">遺伝子検査結果レポート</h4>
-                <p className="text-xs text-gray-600">全21ページ (2.4MB)</p>
+                <h4 className="text-sm font-semibold mb-2">IDENSIL 完全レポート</h4>
+                <p className="text-xs text-gray-600">全32ページ (3.2MB)</p>
               </div>
 
               {/* Simulated PDF Content Preview */}
@@ -79,11 +96,14 @@ const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
             </div>
 
             <div className="mt-4 flex gap-2">
-              <button className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-semibold hover:bg-blue-600 transition-colors">
+              <button
+                onClick={() => handlePDFDownload('idensil')}
+                className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-semibold hover:bg-blue-600 transition-colors active:scale-95"
+              >
                 <Download className="w-4 h-4" />
                 ダウンロード
               </button>
-              <button className="flex items-center gap-2 px-4 py-2 bg-white border-2 border-blue-500 text-blue-500 rounded-full text-sm font-semibold hover:bg-blue-50 transition-colors">
+              <button className="flex items-center gap-2 px-4 py-2 bg-white border-2 border-blue-500 text-blue-500 rounded-full text-sm font-semibold hover:bg-blue-50 transition-colors active:scale-95">
                 <ExternalLink className="w-4 h-4" />
                 全画面で開く
               </button>
@@ -123,11 +143,14 @@ const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
             </div>
 
             <div className="mt-4 flex gap-2">
-              <button className="flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-full text-sm font-semibold hover:bg-green-600 transition-colors">
+              <button
+                onClick={() => handlePDFDownload('training')}
+                className="flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-full text-sm font-semibold hover:bg-green-600 transition-colors active:scale-95"
+              >
                 <Download className="w-4 h-4" />
                 ダウンロード
               </button>
-              <button className="flex items-center gap-2 px-4 py-2 bg-white border-2 border-green-500 text-green-500 rounded-full text-sm font-semibold hover:bg-green-50 transition-colors">
+              <button className="flex items-center gap-2 px-4 py-2 bg-white border-2 border-green-500 text-green-500 rounded-full text-sm font-semibold hover:bg-green-50 transition-colors active:scale-95">
                 <ExternalLink className="w-4 h-4" />
                 全画面で開く
               </button>
@@ -163,7 +186,8 @@ const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
             結果の見方
           </h4>
           <ul className="space-y-1.5 text-xs text-gray-700">
-            <li>• PDFには21項目の詳細な遺伝子情報が含まれています</li>
+            <li>• IDENSIL PDFには32項目の詳細な遺伝子情報が含まれています</li>
+            <li>• 順天堂大学のスポーツ遺伝学専門家が監修しています</li>
             <li>• おすすめメニューはあなた専用にカスタマイズされています</li>
             <li>• わからないことがあればLINEでお気軽にご相談ください</li>
           </ul>
@@ -174,7 +198,7 @@ const DNAResultScreen: React.FC<DNAResultScreenProps> = ({ onBack }) => {
       {showToast && (
         <div className="fixed inset-x-0 top-20 px-4 z-50 animate-fadeIn">
           <div className="bg-gray-900 bg-opacity-90 text-white text-sm px-4 py-3 rounded-xl shadow-lg max-w-sm mx-auto text-center">
-            LINEアプリに移動します。アプリに戻るには再度開いてください。
+            {toastMessage}
           </div>
         </div>
       )}
