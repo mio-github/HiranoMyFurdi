@@ -1,0 +1,298 @@
+{
+  "projectName": "MyFurdi",
+  "projectDescription": "女性専用AIパーソナルトレーニングジム FURDI 会員向けアプリ",
+  "baseUrl": "http://localhost:3001",
+  "outputDir": "/Volumes/KIOXIA/Developments/withAI/Vercel/Furdi/MyFURDI/HiranoMyFurdi/mockup-output",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "pages": [
+    {
+      "name": "home",
+      "path": "/",
+      "title": "ホーム画面",
+      "title_en": "Home Screen",
+      "description": "時間帯別の挨拶、今日のチャレンジカード、来店サマリー、混雑状況クイックビュー、健康データサマリー、クイックアクション、週次サマリーを表示",
+      "waitStrategy": "basic",
+      "actions": [],
+      "features": [
+        {
+          "title_ja": "時間帯別パーソナライズ挨拶",
+          "title_en": "Time-based Personalized Greeting",
+          "detail_ja": "朝・昼・夜の時間帯に応じて挨拶メッセージを自動変更。ユーザー名を含めたパーソナライズされた挨拶で、アプリの利用体験を向上させます。",
+          "detail_en": "Automatically adjusts greeting messages based on morning, afternoon, and evening time slots. Personalized greetings including user names enhance app experience."
+        },
+        {
+          "title_ja": "今日のチャレンジカード",
+          "title_en": "Daily Challenge Card",
+          "detail_ja": "日替わりで設定される運動チャレンジを視覚的に表示。進捗状況をリアルタイムで確認でき、モチベーション維持をサポートします。",
+          "detail_en": "Visually displays daily rotating workout challenges. Real-time progress tracking helps maintain motivation."
+        },
+        {
+          "title_ja": "来店サマリー",
+          "title_en": "Visit Summary",
+          "detail_ja": "今月・今週の訪問回数を一目で確認。目標達成率も表示し、継続的な利用を促進します。",
+          "detail_en": "View monthly and weekly visit counts at a glance. Goal achievement rates encourage continuous usage."
+        },
+        {
+          "title_ja": "店舗混雑状況クイックビュー",
+          "title_en": "Gym Congestion Quick View",
+          "detail_ja": "リアルタイムの店舗混雑状況を3段階（空いている・やや混雑・混雑）で表示。最適な来店時間の判断をサポートします。",
+          "detail_en": "Displays real-time gym congestion in 3 levels (available, somewhat busy, crowded). Helps determine optimal visit times."
+        },
+        {
+          "title_ja": "健康データサマリー",
+          "title_en": "Health Data Summary",
+          "detail_ja": "最新の体重・体脂肪率をカード形式で表示。前回測定値との比較や目標値との差分も確認できます。",
+          "detail_en": "Displays latest weight and body fat percentage in card format. Compare with previous measurements and goal values."
+        },
+        {
+          "title_ja": "クイックアクションボタン",
+          "title_en": "Quick Action Buttons",
+          "detail_ja": "入館証表示や運動開始など、頻繁に使用する機能へ1タップでアクセス。ユーザビリティを大幅に向上させます。",
+          "detail_en": "One-tap access to frequently used features like entry pass and workout start. Significantly improves usability."
+        },
+        {
+          "title_ja": "週次アクティビティサマリー",
+          "title_en": "Weekly Activity Summary",
+          "detail_ja": "過去7日間の活動状況をグラフで可視化。運動頻度や消費カロリーの推移を確認できます。",
+          "detail_en": "Visualizes past 7 days of activity with graphs. Track workout frequency and calorie burn trends."
+        }
+      ]
+    },
+    {
+      "name": "report",
+      "path": "/",
+      "title": "レポート画面",
+      "title_en": "Report Screen",
+      "description": "運動記録（グラフ表示）、体組成データ（推移グラフ）、来館履歴（カレンダービュー）を表示",
+      "waitStrategy": "graph",
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[data-tab='report']",
+          "description": "レポートタブをクリック"
+        },
+        {
+          "type": "wait",
+          "duration": 1000,
+          "description": "グラフの描画を待つ"
+        }
+      ],
+      "features": [
+        {
+          "title_ja": "運動記録の可視化",
+          "title_en": "Workout History Visualization",
+          "detail_ja": "運動時間や消費カロリーを折れ線グラフで表示。視覚的に進捗を確認することで、継続的なモチベーション向上を実現します。",
+          "detail_en": "Displays workout duration and calories burned in line charts. Visual progress tracking maintains continuous motivation."
+        },
+        {
+          "title_ja": "体組成データ推移グラフ",
+          "title_en": "Body Composition Trend Chart",
+          "detail_ja": "体重・体脂肪率・筋肉量の推移を複数のグラフで表示。長期的な身体変化を詳細に追跡できます。",
+          "detail_en": "Multiple charts showing weight, body fat percentage, and muscle mass trends. Detailed tracking of long-term physical changes."
+        },
+        {
+          "title_ja": "来館履歴カレンダービュー",
+          "title_en": "Visit History Calendar View",
+          "detail_ja": "月間カレンダー形式で来館履歴を表示。訪問パターンの把握や、習慣化の確認に役立ちます。",
+          "detail_en": "Monthly calendar format displays visit history. Helps understand visit patterns and habit formation."
+        },
+        {
+          "title_ja": "期間フィルター",
+          "title_en": "Period Filter",
+          "detail_ja": "週間・月間・年間の3つの期間でデータを切り替え表示。短期・長期の両面から進捗を分析できます。",
+          "detail_en": "Switch data views between weekly, monthly, and yearly periods. Analyze progress from both short-term and long-term perspectives."
+        },
+        {
+          "title_ja": "データエクスポート機能",
+          "title_en": "Data Export Functionality",
+          "detail_ja": "運動記録や体組成データをCSV形式でエクスポート可能。外部ツールでの詳細分析やバックアップに活用できます。",
+          "detail_en": "Export workout logs and body composition data in CSV format. Useful for detailed analysis with external tools and backups."
+        },
+        {
+          "title_ja": "目標達成率表示",
+          "title_en": "Goal Achievement Rate Display",
+          "detail_ja": "設定した目標に対する達成率をパーセンテージとビジュアルで表示。目標までの距離を明確化します。",
+          "detail_en": "Displays achievement rates as percentages and visuals against set goals. Clarifies distance to goal completion."
+        }
+      ]
+    },
+    {
+      "name": "qrcode",
+      "path": "/",
+      "title": "入館証画面",
+      "title_en": "Entry Pass Screen",
+      "description": "QRコード表示、会員情報、店舗選択、利用案内を表示",
+      "waitStrategy": "basic",
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[data-tab='qrcode']",
+          "description": "入館証タブをクリック"
+        },
+        {
+          "type": "wait",
+          "duration": 500,
+          "description": "QRコードの描画を待つ"
+        }
+      ],
+      "features": [
+        {
+          "title_ja": "個人別QRコード生成",
+          "title_en": "Personal QR Code Generation",
+          "detail_ja": "会員ごとに固有のQRコードを自動生成。入館ゲートでスキャンするだけで、スムーズな入退館が可能です。",
+          "detail_en": "Automatically generates unique QR codes for each member. Simple scanning at entrance gates enables smooth check-in and check-out."
+        },
+        {
+          "title_ja": "会員情報表示",
+          "title_en": "Member Information Display",
+          "detail_ja": "氏名・会員番号・有効期限を見やすく表示。会員証として必要な情報を一画面で確認できます。",
+          "detail_en": "Clearly displays name, member ID, and expiration date. All necessary membership information viewable on one screen."
+        },
+        {
+          "title_ja": "店舗選択機能",
+          "title_en": "Gym Location Selection",
+          "detail_ja": "複数店舗を利用する会員向けに、訪問予定の店舗を選択可能。選択店舗に最適化された情報を表示します。",
+          "detail_en": "Members using multiple locations can select their intended gym. Displays information optimized for the selected location."
+        },
+        {
+          "title_ja": "QRコード自動更新",
+          "title_en": "Automatic QR Code Refresh",
+          "detail_ja": "セキュリティ強化のため、QRコードを定期的に自動更新。不正利用のリスクを最小限に抑えます。",
+          "detail_en": "Periodically auto-refreshes QR codes for enhanced security. Minimizes risk of unauthorized use."
+        },
+        {
+          "title_ja": "利用案内・注意事項",
+          "title_en": "Usage Guidelines and Notices",
+          "detail_ja": "入館時の注意事項や、店舗からの重要なお知らせを表示。最新情報を見逃しません。",
+          "detail_en": "Displays entry precautions and important notices from gyms. Stay updated with the latest information."
+        },
+        {
+          "title_ja": "オフライン対応",
+          "title_en": "Offline Support",
+          "detail_ja": "通信環境が不安定な場合でも、キャッシュ機能によりQRコードを表示可能。確実な入館をサポートします。",
+          "detail_en": "Caching feature enables QR code display even with unstable network. Ensures reliable entry access."
+        }
+      ]
+    },
+    {
+      "name": "reward",
+      "path": "/",
+      "title": "リワード画面",
+      "title_en": "Reward Screen",
+      "description": "今日のチャレンジ（日次）、週間・月間チャレンジ、マイバッジコレクション、実績・ランクシステムを表示",
+      "waitStrategy": "basic",
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[data-tab='reward']",
+          "description": "リワードタブをクリック"
+        },
+        {
+          "type": "wait",
+          "duration": 500,
+          "description": "コンテンツの描画を待つ"
+        }
+      ],
+      "features": [
+        {
+          "title_ja": "今日のチャレンジ",
+          "title_en": "Daily Challenge",
+          "detail_ja": "日替わりで提供される運動チャレンジと進捗状況を表示。達成までの残り回数や時間をリアルタイムで確認できます。",
+          "detail_en": "Displays daily rotating workout challenges and progress. Real-time tracking of remaining counts and time until completion."
+        },
+        {
+          "title_ja": "週間・月間チャレンジ",
+          "title_en": "Weekly and Monthly Challenges",
+          "detail_ja": "長期的な目標設定と達成を支援。週間・月間単位のチャレンジで、継続的なモチベーション向上を促します。",
+          "detail_en": "Supports long-term goal setting and achievement. Weekly and monthly challenges promote continuous motivation."
+        },
+        {
+          "title_ja": "マイバッジコレクション",
+          "title_en": "My Badge Collection",
+          "detail_ja": "達成した実績に応じて獲得できるバッジを一覧表示。コレクション要素でゲーム感覚を取り入れ、楽しく続けられます。",
+          "detail_en": "Displays collection of badges earned through achievements. Gamification elements make fitness fun and engaging."
+        },
+        {
+          "title_ja": "実績・ランクシステム",
+          "title_en": "Achievement and Rank System",
+          "detail_ja": "累計来館回数や運動時間に基づくランク制度。ランクアップにより、特別な特典や称号を獲得できます。",
+          "detail_en": "Ranking system based on total visits and workout time. Rank ups unlock special benefits and titles."
+        },
+        {
+          "title_ja": "獲得ポイント・報酬",
+          "title_en": "Points and Rewards",
+          "detail_ja": "運動実績に応じて付与されるポイントと、交換可能な報酬を確認。具体的な目標設定をサポートします。",
+          "detail_en": "View points earned from workout achievements and redeemable rewards. Supports concrete goal setting."
+        },
+        {
+          "title_ja": "達成時アニメーション",
+          "title_en": "Completion Animation",
+          "detail_ja": "チャレンジ達成時に表示される祝福アニメーション。達成感を視覚的に演出し、次への意欲を高めます。",
+          "detail_en": "Celebratory animations displayed upon challenge completion. Visual sense of accomplishment boosts motivation for next goals."
+        }
+      ]
+    },
+    {
+      "name": "menu",
+      "path": "/",
+      "title": "メニュー画面",
+      "title_en": "Menu Screen",
+      "description": "ユーザープロフィール、各種設定、コンテンツへのアクセス、ログアウトを表示",
+      "waitStrategy": "basic",
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[data-tab='menu']",
+          "description": "メニュータブをクリック"
+        },
+        {
+          "type": "wait",
+          "duration": 500,
+          "description": "メニュー表示を待つ"
+        }
+      ],
+      "features": [
+        {
+          "title_ja": "プロフィール管理",
+          "title_en": "Profile Management",
+          "detail_ja": "氏名・生年月日・連絡先などの個人情報を表示・編集。プロフィール写真の変更も可能です。",
+          "detail_en": "Display and edit personal information including name, date of birth, and contact details. Profile photo updates available."
+        },
+        {
+          "title_ja": "アプリ設定",
+          "title_en": "App Settings",
+          "detail_ja": "通知設定・表示言語・テーマカラーなど、アプリの動作や見た目をカスタマイズ。好みに合わせた使用環境を構築できます。",
+          "detail_en": "Customize app behavior and appearance including notifications, language, and theme colors. Create personalized user environment."
+        },
+        {
+          "title_ja": "健康データ管理",
+          "title_en": "Health Data Management",
+          "detail_ja": "体重・体脂肪率・血圧などの健康データを一元管理。手動入力や連携デバイスからの自動取り込みに対応します。",
+          "detail_en": "Centralized management of health data including weight, body fat, and blood pressure. Supports manual input and automatic import from connected devices."
+        },
+        {
+          "title_ja": "DNA検査結果連携",
+          "title_en": "DNA Test Results Integration",
+          "detail_ja": "IDENSIL社のDNA検査結果と連携。遺伝子情報に基づいた最適な運動プランや栄養アドバイスを提供します。",
+          "detail_en": "Integrates with IDENSIL DNA test results. Provides optimal workout plans and nutritional advice based on genetic information."
+        },
+        {
+          "title_ja": "ヘルプ・サポート",
+          "title_en": "Help and Support",
+          "detail_ja": "よくある質問・使い方ガイド・お問い合わせフォームへアクセス。困ったときにすぐサポートを受けられます。",
+          "detail_en": "Access FAQs, user guides, and contact forms. Quick support available when needed."
+        },
+        {
+          "title_ja": "ログアウト",
+          "title_en": "Logout",
+          "detail_ja": "アプリからの安全なログアウト機能。共有デバイス使用時のセキュリティを確保します。",
+          "detail_en": "Secure logout functionality. Ensures security when using shared devices."
+        }
+      ]
+    }
+  ],
+  "annotations": []
+}
